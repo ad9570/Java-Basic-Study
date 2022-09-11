@@ -1,4 +1,4 @@
-class Ex07Arr2D {
+class Ex11Arr2D {
 	public static void main(String[] args) {
 		int[][] score = {
 				  { 100, 100, 100 }

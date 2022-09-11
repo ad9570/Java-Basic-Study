@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Ex5_14 {
+public class Ex07RandomPrint {
 
 	public static void main(String[] args) {
 		String[] strArr = {"가위", "바위", "보"};	// index : 0~2

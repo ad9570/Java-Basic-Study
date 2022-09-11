@@ -1,6 +1,6 @@
 import java.util.Arrays;	// Ctrl + Shift + o : 자동 import
 
-public class Ex5_13 {
+public class Ex04ArrayPrint {
 
 	public static void main(String[] args) {
 		int[] iArr = {100, 95, 80, 70, 60};	// 길이가 5인 int배열

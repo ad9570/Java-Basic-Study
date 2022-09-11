@@ -1,4 +1,4 @@
-class Ex06InputArgs {
+class Ex10InputArgs {
 	public static void main(String[] args) {
 		System.out.println("매개변수의 개수:"+args.length);
 		for(int i=0;i< args.length;i++) {

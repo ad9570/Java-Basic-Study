@@ -1,5 +1,5 @@
 
-public class Ex5_12 {
+public class Ex03Length {
 
 	public static void main(String[] args) {
 		int[] arr = new int[8];	// 길이가 10인 int배열 arr을 생성, index범위 : 0 ~ 9 -> 길이 8로 수정

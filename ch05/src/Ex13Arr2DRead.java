@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Ex5_10{
+class Ex13Arr2DRead{
 	public static void main(String[] args) {
 		String[][] words = {
 			{"chair","의자"},      	// words[0][0], words[0][1]
@@ -26,5 +26,5 @@ class Ex5_10{
 		
 		scanner.close();
 		System.out.println("점수 : " + score + " / " + 3);
-	} // main의 끝
+	}
 }

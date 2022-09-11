@@ -1,4 +1,4 @@
-class Ex03MaxAndMin { 
+class Ex06MaxAndMin { 
 	public static void main(String[] args) { 
 		int[] score = { 79, 88, 91, 33, 100, 55, 95 }; 
 

@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Ex05Lottery { 
+class Ex09Lottery { 
 	public static void main(String[] args) { 
 		int[] ball = new int[45];  // 45개의 정수값을 저장하기 위한 배열 생성. -> index : 0~44  
 

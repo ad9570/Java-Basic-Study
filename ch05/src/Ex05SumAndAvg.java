@@ -1,4 +1,4 @@
-class Ex02SumAndAvg {
+class Ex05SumAndAvg {
 	public static void main(String[] args) {
 		int   sum = 0;      // 총점을 저장하기 위한 변수
 		float average = 0f; // 평균을 저장하기 위한 변수

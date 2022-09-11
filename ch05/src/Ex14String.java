@@ -1,5 +1,5 @@
 
-public class Ex5_15 {
+public class Ex14String {
 
 	public static void main(String[] args) {
 //					  12345

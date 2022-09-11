@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Ex5_16 {
+public class Ex15Arrays {
 
 	public static void main(String[] args) {
 		int[] arr = { 3, 1, 2, 4, 0 };				// 1차원 배열 arr
