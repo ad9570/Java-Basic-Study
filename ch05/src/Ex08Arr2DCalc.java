@@ -1,4 +1,4 @@
-class Ex5_9 {
+class Ex08Arr2DCalc {
 	public static void main(String[] args) {
 		 int[][] score = {
 							  { 100, 100, 100}

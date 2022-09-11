@@ -1,6 +1,6 @@
 import java.util.Arrays;  // Arrays.toString()을 사용하기 위해 추가
 
-class Ex5_1 {
+class Ex01ArrayPrint {
 	public static void main(String[] args) {
 		int[] iArr1 = new int[10];
 		int[] iArr2 = new int[10];

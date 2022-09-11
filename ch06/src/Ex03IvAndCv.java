@@ -1,4 +1,4 @@
-class Ex6_3 {
+class Ex03IvAndCv {
 	public static void main(String args[]) {
 		System.out.println("-- 객체 생성 전 --");
 		System.out.println("Card.width = " + Card.width);

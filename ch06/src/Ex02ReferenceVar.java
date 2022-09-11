@@ -1,4 +1,4 @@
-class Ex6_2 {
+class Ex02ReferenceVar {
 	public static void main(String args[]) {
 		Tv t1 = new Tv();  // Tv t1; t1 = new Tv();를 한 문장으로 가능
 		Tv t2 = new Tv();

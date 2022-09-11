@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Ex5_4 {
+class Ex04Shuffle {
 	public static void main(String[] args) {
 		int[] numArr = {0,1,2,3,4,5,6,7,8,9};
 		System.out.println(Arrays.toString(numArr));
@@ -15,5 +15,5 @@ class Ex5_4 {
 			numArr[n] = tmp;
 			System.out.println(Arrays.toString(numArr));
 		}
-	} // main의 끝
+	}
 }
