@@ -1,4 +1,4 @@
-class Ex2_12 {
+class Ex03CharAndInt {
 	public static void main(String args[]) {
 		String str = "3";
 
