@@ -1,4 +1,4 @@
-class Ex4_11 {
+class Ex07RectTriangle {
 	public static void main(String[] args) { 
 
 		for(int i=2;i<=9;i++) {

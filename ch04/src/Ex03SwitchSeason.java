@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Ex4_6 {
+class Ex03SwitchSeason {
 	public static void main(String[] args) { 
 		System.out.print("현재 월을 입력하세요.>");
 

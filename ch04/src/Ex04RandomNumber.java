@@ -1,4 +1,4 @@
-class Ex4_7 {
+class Ex04RandomNumber {
 	public static void main(String args[]) {
 		int num = 0;
 

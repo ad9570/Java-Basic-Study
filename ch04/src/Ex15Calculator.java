@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Ex4_20 {
+class Ex15Calculator {
 	public static void main(String[] args) { 
 		int menu = 0, num  = 0;
 		Scanner scanner = new Scanner(System.in);

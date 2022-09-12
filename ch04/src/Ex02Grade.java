@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Ex4_5 {
+class Ex02Grade {
 	public static void main(String[] args) { 
 		int  score = 0;
 		char grade = ' ', opt = '0';

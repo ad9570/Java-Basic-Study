@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Ex4_14 {
+class Ex09DigitSum {
 	public static void main(String[] args) { 
 		int num = 0, sum = 0;
 		

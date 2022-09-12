@@ -1,4 +1,4 @@
-class Ex4_16 {
+class Ex11Break {
 	public static void main(String[] args) { 
 		int sum = 0;
 		int i   = 0;

@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Ex4_15 {
+class Ex10UpAndDown {
 	public static void main(String[] args) { 
 		int input  = 0, answer = 0;
 

@@ -1,4 +1,4 @@
-class Ex4_13 {
+class Ex08WhileSum {
 	public static void main(String[] args) {
 		int sum = 0;
 		int i = 0;

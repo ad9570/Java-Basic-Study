@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Ex4_18 {
+class Ex13Menu {
 	public static void main(String[] args) { 
 		int menu = 0;
 

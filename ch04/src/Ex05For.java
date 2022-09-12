@@ -1,4 +1,4 @@
-class Ex4_8 {
+class Ex05For {
 	public static void main(String args[]) {
 		for (int i = 1; i <= 5; i++) { // 괄호{}안의 문장을 5번 반복(i = 1, 2, 3, 4, 5)
 			System.out.println("Hello " + i);
