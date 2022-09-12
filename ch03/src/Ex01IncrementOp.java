@@ -1,4 +1,4 @@
-class Ex3_2 {
+class Ex01IncrementOp {
 	public static void main(String args[]) {
 		int i=5, j=0;
 

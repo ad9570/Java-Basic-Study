@@ -1,4 +1,4 @@
-class Ex3_9 {
+class Ex04Overflow {
 	public static void main(String args[]) { 
 		int a = 1_000_000;    // 1,000,000   1백만 = 10^6
 		int b = 2_000_000;    // 2,000,000   2백만 = 2*10^6

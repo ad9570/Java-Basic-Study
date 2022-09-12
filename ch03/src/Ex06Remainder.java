@@ -1,4 +1,4 @@
-class Ex3_12 {
+class Ex06Remainder {
 	public static void main(String args[]) { 
 		int x = 10;
 		int y = 8;

@@ -1,4 +1,4 @@
-class Ex3_6 {
+class Ex03Divide {
 	public static void main(String args[]) { 
 		int a = 10;
 		int b = 4;
