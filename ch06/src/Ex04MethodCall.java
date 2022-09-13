@@ -7,6 +7,10 @@ class Ex04MethodCall {
 		double result4 = mm.divide(5L, 3L);
 		long result5 = mm.max(5L, 3L);
 		long result6 = mm.min(5L, 3L);
+		
+		mm.print9(12);
+		mm.print9(7);
+		mm.print9(0);
 
 		System.out.println("add(5L, 3L) = " + result1);
 		System.out.println("subtract(5L, 3L) = " + result2);
@@ -33,9 +37,23 @@ class Ex04MethodCall {
 		return a / b;
 	}
 	long max(long a, long b) {
-		return a > b ? a : b;
+		if (a > b) {
+			return a;	// 조건식이 참일때만 실행
+		} else {
+			return b;	// 조건식이 거짓일때만 실행
+		}
 	}
 	long min(long a, long b) {
 		return a < b ? a : b;
+	}
+	
+	void print9(int n) {
+		if (!(2 <= n && n <= 9))
+			return;
+		
+		for (int i = 1; i <= 9; i++)
+			System.out.printf("%d * %d = %d%n", n, i, n * i);
+		
+//		return;	// 반환타입이 void일 경우 생략가능
 	}
  }
