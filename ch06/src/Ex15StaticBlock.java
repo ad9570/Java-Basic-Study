@@ -1,9 +1,9 @@
-class Ex6_15 {
+class Ex15StaticBlock {
 	static int[] arr = new int[10];
 
 	static {
 		for(int i=0;i<arr.length;i++) {
-			// 1°ú 10»çÀÌÀÇ ÀÓÀÇÀÇ °ªÀ» ¹è¿­ arr¿¡ ÀúÀåÇÑ´Ù.
+			// 1ê³¼ 10ì‚¬ì´ì˜ ìž„ì˜ì˜ ê°’ì„ ë°°ì—´ arrì— ì €ìž¥í•´ ì´ˆê¸°í™”í•œë‹¤.
 			arr[i] = (int)(Math.random()*10) + 1;
 		}
 	}
