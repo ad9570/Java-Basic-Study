@@ -17,7 +17,9 @@ public class Ex14GameUnits {
 abstract class Unit {
 	int x, y;
 	abstract void move(int x, int y);
-	void stop() { /* 현재 위치에 정지 */ }
+	void stop() {
+		System.out.println("멈춥니다.");
+	}
 }
 
 class Marine extends Unit { // 보병
