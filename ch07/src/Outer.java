@@ -1,28 +1,46 @@
 class Outer {
 	private int outerIv = 0;
-	static  int outerCv = 0;
+	private static int outerCv = 0;
 
 	class InstanceInner {
-		int iiv  = outerIv;  // ¿ÜºÎ Å¬·¡½ºÀÇ private¸â¹öµµ Á¢±Ù°¡´ÉÇÏ´Ù.
-		int iiv2 = outerCv;
+		int iv1 = outerIv;  // ì™¸ë¶€ í´ë˜ìŠ¤ì˜ privateë©¤ë²„ë„ ì ‘ê·¼ê°€ëŠ¥í•˜ë‹¤.
+		int iv2 = outerCv;
 	}
 
 	static class StaticInner {
-// ½ºÅÂÆ½ Å¬·¡½º´Â ¿ÜºÎ Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½º¸â¹ö¿¡ Á¢±ÙÇÒ ¼ö ¾ø´Ù.
-//		int siv = outerIv;
-		static int scv = outerCv;
+// ìŠ¤íƒœí‹± í´ë˜ìŠ¤ëŠ” ì™¸ë¶€ í´ë˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤ë©¤ë²„ì— ì ‘ê·¼í•  ìˆ˜ ì—†ë‹¤.
+//		int iv = outerIv;
+		static int cv = outerCv;
 	}
 
 	void myMethod() {
-		int lv = 0;
-		final int LV = 0;  // JDK1.8ºÎÅÍ final »ı·« °¡´É
+		int lv1 = 0;
+		final int LV = 0;  // JDK1.8ë¶€í„° final ìƒëµ ê°€ëŠ¥(ê°’ì´ ë³€í•˜ì§€ ì•Šì€ ë³€ìˆ˜ëŠ” ìƒìˆ˜ë¡œ ê°„ì£¼)
+		
+		int lv2 = 0;
+		lv2 = 1;
 
 		class LocalInner {
-			int liv  = outerIv;
-			int liv2 = outerCv;
-//	¿ÜºÎ Å¬·¡½ºÀÇ Áö¿ªº¯¼ö´Â finalÀÌ ºÙÀº º¯¼ö(»ó¼ö)¸¸ Á¢±Ù°¡´ÉÇÏ´Ù.
-//			int liv3 = lv;	// ¿¡·¯!!!(JDK1.8ºÎÅÍ ¿¡·¯ ¾Æ´Ô)
-			int liv4 = LV;	// OK
+			int iv1 = outerIv;
+			int iv2 = outerCv;
+//	ì™¸ë¶€ í´ë˜ìŠ¤ì˜ ì§€ì—­ë³€ìˆ˜ëŠ” finalì´ ë¶™ì€ ë³€ìˆ˜(ìƒìˆ˜)ë§Œ ì ‘ê·¼ê°€ëŠ¥í•˜ë‹¤.
+			int iv3 = lv1;	// ì—ëŸ¬!!!(JDK1.8ë¶€í„° ì—ëŸ¬ ì•„ë‹˜ : ê°’ì´ ë³€í•˜ì§€ ì•Šì€ ë³€ìˆ˜ëŠ” ìƒìˆ˜ë¡œ ê°„ì£¼)
+			int iv4 = LV;	// OK
+			
+//			int iv5 = lv2;	// ì—ëŸ¬, ê°’ì´ ë³€í•œ ë³€ìˆ˜ëŠ” final ìƒëµ ë¶ˆê°€ëŠ¥
 		}
+		
+		System.out.println(lv2);
+		
+		LocalInner li = new LocalInner();
+		System.out.println(li.iv1);
+		System.out.println(li.iv2);
+		System.out.println(li.iv3);
+		System.out.println(li.iv4);
+	}
+	
+	public static void main(String[] args) {
+		Outer o = new Outer();
+		o.myMethod();
 	}
 }

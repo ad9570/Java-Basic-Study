@@ -10,8 +10,8 @@ class Outer3 {
 			System.out.println("       this.value :" + this.value);
 			System.out.println("Outer3.this.value :" + Outer3.this.value);
 		}
-	} // InnerÅ¬·¡½ºÀÇ ³¡
-} // Outer3Å¬·¡½ºÀÇ ³¡
+	} // Innerí´ë˜ìŠ¤ì˜ ë
+} // Outer3í´ë˜ìŠ¤ì˜ ë
 
 class Ex7_16 {
 	public static void main(String args[]) {
