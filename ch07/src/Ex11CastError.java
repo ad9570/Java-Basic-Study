@@ -5,13 +5,16 @@ class Ex11CastError {
 		
 		FireEngine fe2 = (FireEngine)c;
 		Car c2 = fe;
-		c2.drive();		// ERROR, NullPointerException
-		fe2.water();	// ERROR, NullPointerException
+//		c2.drive();		// ERROR, NullPointerException
+//		fe2.water();	// ERROR, NullPointerException
+		System.out.println(fe2);
+		System.out.println(c2);
 		
 		Car c3 = new Car();	// water()가 없는 멤버 4개짜리 인스턴스
 		
 		FireEngine fe3 = (FireEngine)c3;	// water()를 포함한 멤버 5개짜리 클래스로 형변환 해도
 											// 하지만 실제 인스턴스에 water()가 없어 호출 불가능
-		fe3.water();	// ERROR, ClassCastException
+//		fe3.water();	// ERROR, ClassCastException
+		System.out.println(fe3);
 	}
 }

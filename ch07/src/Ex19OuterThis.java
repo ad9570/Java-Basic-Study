@@ -13,7 +13,7 @@ class Outer3 {
 	} // Inner클래스의 끝
 } // Outer3클래스의 끝
 
-class Ex7_16 {
+class Ex19OuterThis {
 	public static void main(String args[]) {
 		Outer3 outer = new Outer3();
 		Outer3.Inner inner = outer.new Inner();

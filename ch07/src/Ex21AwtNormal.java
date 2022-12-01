@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.awt.event.*;
 
-class Ex7_18 {
+class Ex21AwtNormal {
 	public static void main(String[] args) {
 		Button b = new Button("Start");
 		b.addActionListener(new EventHandler());
