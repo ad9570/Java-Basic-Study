@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3ba0ea2d-f1e1-4f71-a397-3d59eb017383" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ch02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex01NewLine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex02TypeMax.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex03CharAndInt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex04PrintCalculation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex05PrintfSample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex06ScanfSample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex07Var1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex08Var2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Ex09Var3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch03/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch03/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch03/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch03/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch03/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch03/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch03/bin/Ex01IncrementOp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch03/bin/Ex02Casting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch03/bin/Ex03Divide.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch03/bin/Ex04Overflow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch03/bin/Ex05Round.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch03/bin/Ex06Remainder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch03/src/Ex01IncrementOp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch03/src/Ex02Casting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch03/src/Ex03Divide.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch03/src/Ex04Overflow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch03/src/Ex05Round.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch03/src/Ex06Remainder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/bin/Ex01Score.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/bin/Ex02Grade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/bin/Ex03SwitchSeason.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/bin/Ex04RandomNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/bin/Ex05For.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/bin/Ex06ForSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/bin/Ex07RectTriangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/bin/Ex08WhileSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/bin/Ex09DigitSum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/bin/Ex10UpAndDown.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/bin/Ex11Break.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/bin/Ex12Continue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/bin/Ex13Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/bin/Ex14LoopLabel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/bin/Ex15Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/src/Ex01Score.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/src/Ex02Grade.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/src/Ex03SwitchSeason.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/src/Ex04RandomNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/src/Ex05For.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/src/Ex06ForSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/src/Ex07RectTriangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/src/Ex08WhileSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/src/Ex09DigitSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/src/Ex10UpAndDown.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/src/Ex11Break.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/src/Ex12Continue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/src/Ex13Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/src/Ex14LoopLabel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch04/src/Ex15Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/bin/Ex01ArrayDeclare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/bin/Ex02ArrayInitialize.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/bin/Ex03Length.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/bin/Ex04ArrayPrint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/bin/Ex05SumAndAvg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/bin/Ex06MaxAndMin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/bin/Ex07RandomPrint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/bin/Ex08Shuffle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/bin/Ex09Lottery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/bin/Ex10InputArgs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/bin/Ex11Arr2D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/bin/Ex12Arr2DCalc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/bin/Ex13Arr2DRead.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/bin/Ex14String.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/bin/Ex15Arrays.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/src/Ex01ArrayDeclare.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/src/Ex02ArrayInitialize.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/src/Ex03Length.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/src/Ex04ArrayPrint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/src/Ex05SumAndAvg.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/src/Ex06MaxAndMin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/src/Ex07RandomPrint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/src/Ex08Shuffle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/src/Ex09Lottery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/src/Ex10InputArgs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/src/Ex11Arr2D.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/src/Ex12Arr2DCalc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/src/Ex13Arr2DRead.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/src/Ex14String.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch05/src/Ex15Arrays.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Car2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Card.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Data.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Data2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Data3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Data_1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Data_2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Ex01Instance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Ex02ReferenceVar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Ex03IvAndCv.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Ex04MethodCall.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Ex05CallStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Ex06PrimitiveParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Ex07ReferenceParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Ex08ReferenceReturn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Ex09CmAndIm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Ex10Overloading.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Ex11Constructor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Ex12CarConstructor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Ex13ThisAndThis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Ex14ComplexInit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Ex15StaticBlock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Hello4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Hello5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/MyMath.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/MyMath2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/MyMath3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/Tv.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/bin/hello3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/src/Ex01Instance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/src/Ex02ReferenceVar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/src/Ex03IvAndCv.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/src/Ex04MethodCall.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/src/Ex05CallStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/src/Ex06PrimitiveParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/src/Ex07ReferenceParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/src/Ex08ReferenceReturn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/src/Ex09CmAndIm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/src/Ex10Overloading.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/src/Ex11Constructor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/src/Ex12CarConstructor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/src/Ex13ThisAndThis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/src/Ex14ComplexInit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/src/Ex15StaticBlock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch06/src/Hello3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ambulance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Audio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Audio2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/AudioPlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/B.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/BackgroundPlayer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Buyer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Buyer2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/C.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/CenterPoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Child1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Child2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Child3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/CircleC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/CircleI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/CircleO1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/CircleO2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Clock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Computer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Computer2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Dropship.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/E.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/EventHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex01ChildMember.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex02Inheritance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex03Composite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex04Object.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex05Override.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex06RefSuper1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex07RefSuper2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex08ConsSuper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex09StaticImport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex10Cast.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex11CastError.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex12Buy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex13Cart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex14GameUnits.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex15DefaultMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex16Outer$1LocalInner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex16Outer$InstanceInner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex16Outer$StaticInner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex16Outer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex17ImAndCm$1LocalInner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex17ImAndCm$InstanceInner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex17ImAndCm$StaticInner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex17ImAndCm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex18InnerInstances.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex19OuterThis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex20AnonymousTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex20AnonymousTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex20AnonymousTest$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex20AnonymousTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex21AwtNormal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex22AwtAnonymous$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Ex22AwtAnonymous.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/F.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Fightable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Fighter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/FighterTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/FireEngine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/I.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/InnerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/InterfaceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Marine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/MyInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/MyInterface2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Outer$1LocalInner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Outer$InstanceInner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Outer$StaticInner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Outer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Outer2$1LocalInner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Outer2$InstanceInner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Outer2$StaticInner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Outer2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Outer3$Inner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Outer3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Parent1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Parent2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Parent3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/PlayerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Point2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Point2D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Point3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Point3D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Product2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/SmartTv.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Tank.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Time.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Tv.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Tv1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Tv2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Unit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/X$W.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/X.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Y.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/Z.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/com/codechobo/book/PackageTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/pkg1/AccessParent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/pkg1/AccessTest1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/pkg2/AccessChild.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/bin/pkg2/AccessTest2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Clock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Ex01ChildMember.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Ex02Inheritance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Ex03Composite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Ex04Object.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Ex05Override.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Ex06RefSuper1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Ex07RefSuper2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Ex08ConsSuper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Ex09StaticImport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Ex10Cast.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Ex11CastError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Ex12Buy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Ex13Cart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Ex14GameUnits.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Ex15DefaultMethod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Ex16Outer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Ex17ImAndCm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Ex18InnerInstances.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Ex19OuterThis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Ex20AnonymousTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Ex21AwtNormal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Ex22AwtAnonymous.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/FighterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/InnerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/InterfaceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/Outer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/PlayerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/com/codechobo/book/PackageTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/pkg1/AccessParent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/pkg1/AccessTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/pkg2/AccessChild.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ch07/src/pkg2/AccessTest2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/bin/test/First.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/test/First.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2IrKDS0ecNUr5vpnULa4NKJV4AL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/IdeaProjects/Java-Basic-Study/ch02/src&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\Java-Basic-Study\ch02\src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ba0ea2d-f1e1-4f71-a397-3d59eb017383" name="Changes" comment="" />
+      <created>1670934141603</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670934141603</updated>
+      <workItem from="1670934142672" duration="59000" />
+      <workItem from="1670934205244" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
