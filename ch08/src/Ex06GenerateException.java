@@ -1,7 +1,7 @@
-class Ex8_6 {
+class Ex06GenerateException {
 	public static void main(String args[]) {
 		try {
-			Exception e = new Exception("고의로 발생시켰음.");
+			Exception e = new Exception("고의로 발생시켰음.");	// new Exception("에러 메시지")
 			throw e;	 // 예외를 발생시킴
 		//  throw new Exception("고의로 발생시켰음.");
 
