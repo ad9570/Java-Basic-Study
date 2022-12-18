@@ -47,5 +47,5 @@ class Ex04CatchBlocks {
 			System.out.println("Exception");
 		}	// try-catch의 끝
 		System.out.println(10);
-	}	// main메서드의 끝
+	}
 }
