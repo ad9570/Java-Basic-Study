@@ -1,11 +1,11 @@
 import java.util.StringJoiner;
 
-class Ex9_9 {
+class Ex09StringJoin {
 	public static void main(String[] args) {
-		String animals = "dog,cat,bear";
+		String animals = "dog,cat,fish";
 		String[] arr   = animals.split(",");
 
-		System.out.println(String.join("-", arr));
+		System.out.println(String.join("-", arr));	// 내부적으로 StringBuffer 사용
 
 		StringJoiner sj = new StringJoiner("/","[","]");
 
