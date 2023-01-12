@@ -1,4 +1,4 @@
-class Ex9_11 {
+class Ex11StringBufferCompare {
 	public static void main(String[] args) {
 		StringBuffer sb  = new StringBuffer("abc");
 		StringBuffer sb2 = new StringBuffer("abc");
