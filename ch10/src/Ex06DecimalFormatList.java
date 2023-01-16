@@ -1,6 +1,6 @@
 import java.text.*;
 
-class Ex10_6 {
+class Ex06DecimalFormatList {
 	public static void main(String[] args) throws Exception {
 		double number  = 1234567.89;
 		String[] pattern = {
@@ -35,10 +35,10 @@ class Ex10_6 {
 			"'#'#,###",
 			"''#,###",
 		};
-		
-		for(int i=0; i < pattern.length; i++) {
-		    DecimalFormat df = new DecimalFormat(pattern[i]);
-		    System.out.printf("%19s : %s\n",pattern[i], df.format(number));
+
+		for (int i = 0; i < pattern.length; i++) {
+			DecimalFormat df = new DecimalFormat(pattern[i]);
+			System.out.printf("%19s : %s\n", pattern[i], df.format(number));
 		}
-	} // main
+	}
 }
