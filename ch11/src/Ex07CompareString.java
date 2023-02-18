@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Ex07CompareAndSort {
+class Ex07CompareString {
 	public static void main(String[] args) {
 		String[] strArr = {"cat", "Dog", "lion", "tiger"};
 
@@ -10,12 +10,12 @@ class Ex07CompareAndSort {
 		Arrays.sort(strArr, String.CASE_INSENSITIVE_ORDER); // 대소문자 구분 안하는 정렬 방식
 		System.out.println("strArr = " + Arrays.toString(strArr));
 
-		Arrays.sort(strArr, new Desc<>()); // 역순 정렬 방식
+		Arrays.sort(strArr, new DescStr<>()); // 역순 정렬 방식
 		System.out.println("strArr = " + Arrays.toString(strArr));
 	}
 }
 
-class Desc<String> implements Comparator<String> {
+class DescStr<String> implements Comparator<String> {
 	public int compare(Object o1, Object o2) {
 		if (o1 instanceof Comparable && o2 instanceof Comparable) {
 			Comparable c1 = (Comparable) o1;	// o1의 기본 정렬방식
