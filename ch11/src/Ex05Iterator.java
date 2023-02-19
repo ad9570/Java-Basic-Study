@@ -2,7 +2,7 @@ import java.util.*;
 
 class Ex05Iterator {
 	public static void main(String[] args) {
-		Collection<String> c1 = new ArrayList<>();	// ¾î¶² Äİ·º¼Ç¿¡µç »ç¿ë °¡´É
+		Collection<String> c1 = new ArrayList<>();	// ì–´ë–¤ ì½œë ‰ì…˜ì—ë“  ì‚¬ìš© ê°€ëŠ¥
 		readElements(c1);
 
 		Collection<String> c2 = new HashSet<>();
@@ -26,13 +26,13 @@ class Ex05Iterator {
 		}
 
 		System.out.println("-- 2nd Read --");
-		while(it.hasNext()) {	// ÇÑ ¹ø ÀĞÀº Iterator´Â ´Ù½Ã ¾ÕÀ¸·Î °¨À» ¼ö ¾øÀ½ = Iterator´Â ÀÏÈ¸¿ë
+		while(it.hasNext()) {	// í•œ ë²ˆ ì½ì€ IteratorëŠ” ë‹¤ì‹œ ì•ìœ¼ë¡œ ê°ì„ ìˆ˜ ì—†ìŒ = IteratorëŠ” ì¼íšŒìš©
 			Object obj = it.next();
 			System.out.println(obj);
 		}
 
 		System.out.println("-- 3rd Read --");
-		it = c.iterator();	// Iterator¸¦ ´Ù½Ã »ç¿ë ÇÏ·Á¸é »õ·Î¿î °´Ã¼¸¦ ¸¸µé¾î¾ßÇÔ
+		it = c.iterator();	// Iteratorë¥¼ ë‹¤ì‹œ ì‚¬ìš© í•˜ë ¤ë©´ ìƒˆë¡œìš´ ê°ì²´ë¥¼ ë§Œë“¤ì–´ì•¼í•¨
 
 		while(it.hasNext()) {
 			Object obj = it.next();
@@ -40,7 +40,7 @@ class Ex05Iterator {
 		}
 
 		System.out.println("-- 4th Read --");
-		for (String element : c)	// Iterator·Î ÀĞ´Â ¹æ¹ı ´ë½Å °­È­µÈ for¹®À» È°¿ëÇØ ÀĞÀ»¼öµµ ÀÖÀ½
+		for (String element : c)	// Iteratorë¡œ ì½ëŠ” ë°©ë²• ëŒ€ì‹  ê°•í™”ëœ forë¬¸ì„ í™œìš©í•´ ì½ì„ìˆ˜ë„ ìˆìŒ
 			System.out.println(element);
 
 		System.out.println("==== END ====");

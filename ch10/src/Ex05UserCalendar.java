@@ -1,51 +1,50 @@
-import java.util.*; 
+import java.util.*;
 
 class Ex05UserCalendar {
 	public static void main(String[] args) {
 		if (args.length != 2) {
 			System.out.println("Usage : java Ex05UserCalendar 2023 1");
 			return;
-		} 
-		int year  = Integer.parseInt(args[0]); 
+		}
+		int year  = Integer.parseInt(args[0]);
 		int month = Integer.parseInt(args[1]);
-		// ´Ş·ÂÀ» ¸¸µé ¶§ ÇÊ¿äÇÑ °Í
-		int END_DAY = 0;			// 1. ¸»ÀÏ
-		int START_DAY_OF_WEEK = 0;	// 2. Ã¹ÀÏÀÇ ¿äÀÏ
+		// ë‹¬ë ¥ì„ ë§Œë“¤ ë•Œ í•„ìš”í•œ ê²ƒ
+		int END_DAY = 0;			// 1. ë§ì¼
+		int START_DAY_OF_WEEK = 0;	// 2. ì²«ì¼ì˜ ìš”ì¼
 
-		Calendar sDay = Calendar.getInstance(); // ½ÃÀÛÀÏ 
-		Calendar eDay = Calendar.getInstance(); // ³¡ÀÏ 
+		Calendar sDay = Calendar.getInstance(); // ì‹œì‘ì¼
+		Calendar eDay = Calendar.getInstance(); // ëì¼
 
-		// ¿ùÀÇ °æ¿ì 0ºÎÅÍ 11±îÁöÀÇ °ªÀ» °¡Áö¹Ç·Î 1À» »©ÁÖ¾î¾ß ÇÑ´Ù.
+		// ì›”ì˜ ê²½ìš° 0ë¶€í„° 11ê¹Œì§€ì˜ ê°’ì„ ê°€ì§€ë¯€ë¡œ 1ì„ ë¹¼ì£¼ì–´ì•¼ í•œë‹¤.
 		sDay.set(year, month - 1, 1);
 
-		// 1. ¸»ÀÏ ±¸ÇÏ±â
-		// ´ÙÀ½´ŞÀÇ Ã¹³¯¿¡¼­ ÇÏ·ç¸¦ »©¸é ÇöÀç´ŞÀÇ ¸¶Áö¸· ³¯ÀÌ µÈ´Ù.
+		// 1. ë§ì¼ êµ¬í•˜ê¸°
+		// ë‹¤ìŒë‹¬ì˜ ì²«ë‚ ì—ì„œ í•˜ë£¨ë¥¼ ë¹¼ë©´ í˜„ì¬ë‹¬ì˜ ë§ˆì§€ë§‰ ë‚ ì´ ëœë‹¤.
 		eDay.set(year, month, 1);
 		eDay.add(Calendar.DATE, -1);
 		END_DAY = eDay.get(Calendar.DATE);
 
-		// 2. Ã¹ÀÏÀÇ ¿äÀÏ ±¸ÇÏ±â
+		// 2. ì²«ì¼ì˜ ìš”ì¼ êµ¬í•˜ê¸°
 		START_DAY_OF_WEEK = sDay.get(Calendar.DAY_OF_WEEK);
 
-		// 3. ´Ş·Â Ãâ·Â
+		// 3. ë‹¬ë ¥ ì¶œë ¥
 		StringBuilder sb = new StringBuilder();
 
-		sb.append("      " + year + "³â " + month + "¿ù\n");
+		sb.append("      " + year + "ë…„ " + month + "ì›”\n");
 		sb.append(" SU MO TU WE TH FR SA\n");
 
-		// ÇØ´ç ¿ùÀÇ 1ÀÏÀÌ ¾î´À ¿äÀÏÀÎÁö¿¡ µû¶ó¼­ °ø¹éÀ» Ãâ·ÂÇÑ´Ù. 
-		// ¸¸ÀÏ 1ÀÏÀÌ ¼ö¿äÀÏÀÌ¶ó¸é °ø¹éÀ» ¼¼ ¹ø Âï´Â´Ù.(ÀÏ¿äÀÏºÎÅÍ ½ÃÀÛ) 
-//		for (int i = 1; i < START_DAY_OF_WEEK; i++)
-//			System.out.print("   ");
-		sb.append("   ".repeat(START_DAY_OF_WEEK - 1));	// JDK 11 ~
+		// í•´ë‹¹ ì›”ì˜ 1ì¼ì´ ì–´ëŠ ìš”ì¼ì¸ì§€ì— ë”°ë¼ì„œ ê³µë°±ì„ ì¶œë ¥í•œë‹¤.
+		// ë§Œì¼ 1ì¼ì´ ìˆ˜ìš”ì¼ì´ë¼ë©´ ê³µë°±ì„ ì„¸ ë²ˆ ì°ëŠ”ë‹¤.(ì¼ìš”ì¼ë¶€í„° ì‹œì‘)
+		for (int i = 1; i < START_DAY_OF_WEEK; i++)
+			System.out.print("   ");
 
-		// ÀÏ °ª(i)À» ÇÏ³ª¾¿ Áõ°¡½ÃÅ´°ú µ¿½Ã¿¡ ¿äÀÏ °ª(n)µµ ÇÏ³ª¾¿ Áõ°¡½ÃÅ²´Ù.
-		// ¿äÀÏ °ª(n)Àº Ã¹ÀÏÀÇ ¿äÀÏ °ªÀ¸·Î ÃÊ±âÈ­ÇÑ´Ù.
+		// ì¼ ê°’(i)ì„ í•˜ë‚˜ì”© ì¦ê°€ì‹œí‚´ê³¼ ë™ì‹œì— ìš”ì¼ ê°’(n)ë„ í•˜ë‚˜ì”© ì¦ê°€ì‹œí‚¨ë‹¤.
+		// ìš”ì¼ ê°’(n)ì€ ì²«ì¼ì˜ ìš”ì¼ ê°’ìœ¼ë¡œ ì´ˆê¸°í™”í•œë‹¤.
 		for (int i = 1, n = START_DAY_OF_WEEK; i <= END_DAY; i++, n++) {
 			sb.append((i < 10) ? "  " + i : " " + i);
 			if (n % 7 == 0) sb.append("\n");
 		}
 
 		System.out.println(sb);
-	} 
+	}
 }

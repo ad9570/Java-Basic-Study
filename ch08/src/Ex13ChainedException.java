@@ -5,61 +5,61 @@ class Ex13ChainedException {
 		} catch(InstallException e) {
 			e.printStackTrace();
 		} catch(Exception e) {
-			e.printStackTrace();		
+			e.printStackTrace();
 		}
 	}
 
 	static void install() throws InstallException {
 		try {
-			startInstall();		// ÇÁ·Î±×·¥ ¼³Ä¡¿¡ ÇÊ¿äÇÑ ÁØºñ¸¦ ÇÑ´Ù.
-			copyFiles();		// ÆÄÀÏµéÀ» º¹»çÇÑ´Ù.
-			System.out.println("¼³Ä¡°¡ ¿Ï·áµÇ¾ú½À´Ï´Ù.");
+			startInstall();		// í”„ë¡œê·¸ë¨ ì„¤ì¹˜ì— í•„ìš”í•œ ì¤€ë¹„ë¥¼ í•œë‹¤.
+			copyFiles();		// íŒŒì¼ë“¤ì„ ë³µì‚¬í•œë‹¤.
+			System.out.println("ì„¤ì¹˜ê°€ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
 		} catch (SpaceException se)	{
-			InstallException ie = new InstallException("¼³Ä¡ Áß ¿¹¿Ü ¹ß»ı");
-			ie.initCause(se);	// SpaceExceptionÀ» InstallExceptionÀÇ ¿øÀÎ ¿¹¿Ü·Î µî·Ï
+			InstallException ie = new InstallException("ì„¤ì¹˜ ì¤‘ ì˜ˆì™¸ ë°œìƒ");
+			ie.initCause(se);	// SpaceExceptionì„ InstallExceptionì˜ ì›ì¸ ì˜ˆì™¸ë¡œ ë“±ë¡
 			throw ie;
 		}
-		// MemoryExceptionÀÌ unchecked ¿¹¿Ü°¡ µÇ¾î catch ºí·°ÀÌ ºÒÇÊ¿äÇØÁü
+		// MemoryExceptionì´ unchecked ì˜ˆì™¸ê°€ ë˜ì–´ catch ë¸”ëŸ­ì´ ë¶ˆí•„ìš”í•´ì§
 //		catch (MemoryException me) {
-//			InstallException ie = new InstallException("¼³Ä¡ Áß ¿¹¿Ü ¹ß»ı");
+//			InstallException ie = new InstallException("ì„¤ì¹˜ ì¤‘ ì˜ˆì™¸ ë°œìƒ");
 //			ie.initCause(me);
 //			throw ie;
 //		}
 		finally {
-			deleteTempFiles();		// ÇÁ·Î±×·¥ ¼³Ä¡¿¡ »ç¿ëµÈ ÀÓ½ÃÆÄÀÏµéÀ» »èÁ¦ÇÑ´Ù.
+			deleteTempFiles();		// í”„ë¡œê·¸ë¨ ì„¤ì¹˜ì— ì‚¬ìš©ëœ ì„ì‹œíŒŒì¼ë“¤ì„ ì‚­ì œí•œë‹¤.
 		}
 	}
 
 	static void startInstall() throws SpaceException {
-		if(!enoughSpace()) 		// ÃæºĞÇÑ ¼³Ä¡ °ø°£ÀÌ ¾øÀ¸¸é...
-			throw new SpaceException("°ø°£ÀÌ ºÎÁ·ÇÕ´Ï´Ù.");
-		if (!enoughMemory())	// ÃæºĞÇÑ ¸Ş¸ğ¸®°¡ ¾øÀ¸¸é...
-			throw new RuntimeException(new MemoryException("¸Ş¸ğ¸®°¡ ºÎÁ·ÇÕ´Ï´Ù."));
-			/* MemoryExceptionÀ» RuntimeExceptionÀÇ ¿øÀÎ ¿¹¿Ü·Î µî·ÏÇØ
-			 * checked ¿¹¿Ü¿¡¼­ unchecked ¿¹¿Ü·Î ¹Ù²ãÁÜ */
-//			throw new MemoryException("¸Ş¸ğ¸®°¡ ºÎÁ·ÇÕ´Ï´Ù.");
-		System.out.println("¼³Ä¡¸¦ ½ÃÀÛÇÕ´Ï´Ù.");
+		if(!enoughSpace()) 		// ì¶©ë¶„í•œ ì„¤ì¹˜ ê³µê°„ì´ ì—†ìœ¼ë©´...
+			throw new SpaceException("ê³µê°„ì´ ë¶€ì¡±í•©ë‹ˆë‹¤.");
+		if (!enoughMemory())	// ì¶©ë¶„í•œ ë©”ëª¨ë¦¬ê°€ ì—†ìœ¼ë©´...
+			throw new RuntimeException(new MemoryException("ë©”ëª¨ë¦¬ê°€ ë¶€ì¡±í•©ë‹ˆë‹¤."));
+		/* MemoryExceptionì„ RuntimeExceptionì˜ ì›ì¸ ì˜ˆì™¸ë¡œ ë“±ë¡í•´
+		 * checked ì˜ˆì™¸ì—ì„œ unchecked ì˜ˆì™¸ë¡œ ë°”ê¿”ì¤Œ */
+//			throw new MemoryException("ë©”ëª¨ë¦¬ê°€ ë¶€ì¡±í•©ë‹ˆë‹¤.");
+		System.out.println("ì„¤ì¹˜ë¥¼ ì‹œì‘í•©ë‹ˆë‹¤.");
 	}
 
-   static void copyFiles() {
-	   System.out.println("ÆÄÀÏÀ» º¹»çÇÕ´Ï´Ù.");
-   }
-   static void deleteTempFiles() {
-	   System.out.println("ÀÓ½Ã ÆÄÀÏÀ» »èÁ¦ÇÕ´Ï´Ù.");
-   }
-   
-   static boolean enoughSpace() {
-	   System.out.println("¼³Ä¡¿¡ ÇÊ¿äÇÑ °ø°£ÀÌ ÀÖ´ÂÁö È®ÀÎÇÕ´Ï´Ù.");
-	   return false;
-   }
-   static boolean enoughMemory() {
-	   System.out.println("¼³Ä¡¿¡ ÇÊ¿äÇÑ ¸Ş¸ğ¸®°¡ ÀÖ´ÂÁö È®ÀÎÇÕ´Ï´Ù.");
-	   return true;
-   }
+	static void copyFiles() {
+		System.out.println("íŒŒì¼ì„ ë³µì‚¬í•©ë‹ˆë‹¤.");
+	}
+	static void deleteTempFiles() {
+		System.out.println("ì„ì‹œ íŒŒì¼ì„ ì‚­ì œí•©ë‹ˆë‹¤.");
+	}
+
+	static boolean enoughSpace() {
+		System.out.println("ì„¤ì¹˜ì— í•„ìš”í•œ ê³µê°„ì´ ìˆëŠ”ì§€ í™•ì¸í•©ë‹ˆë‹¤.");
+		return false;
+	}
+	static boolean enoughMemory() {
+		System.out.println("ì„¤ì¹˜ì— í•„ìš”í•œ ë©”ëª¨ë¦¬ê°€ ìˆëŠ”ì§€ í™•ì¸í•©ë‹ˆë‹¤.");
+		return true;
+	}
 }
 
 class InstallException extends Exception {
 	InstallException(String msg) {
-	   super(msg);	
-   }
+		super(msg);
+	}
 }

@@ -2,35 +2,35 @@ import java.io.*;
 
 class Ex10ThrowsTryCatch {
 	public static void main(String[] args) {
-		// file1 »ı¼º : throws ¿¹¿Ü°¡ ¹ß»ıÇÏ¸é ³Ñ±ä ÈÄ -> try-catch È£ÃâÇÑ ÂÊ¿¡¼­ Ã³¸®
+		// file1 ìƒì„± : throws ì˜ˆì™¸ê°€ ë°œìƒí•˜ë©´ ë„˜ê¸´ í›„ -> try-catch í˜¸ì¶œí•œ ìª½ì—ì„œ ì²˜ë¦¬
 		try {
 			File f = createFile(args[0]);
-			System.out.println(f.getName() + " ÆÄÀÏ »ı¼º ¼º°ø.");
+			System.out.println(f.getName() + " íŒŒì¼ ìƒì„± ì„±ê³µ.");
 		} catch (Exception e) {
-			System.out.println(e.getMessage() + " ÆÄÀÏ »ı¼º ½ÇÆĞ.");
+			System.out.println(e.getMessage() + " íŒŒì¼ ìƒì„± ì‹¤íŒ¨.");
 		}
-		// file2 »ı¼º : try-catch ¿¹¿Ü°¡ ¹ß»ıÇÑ °÷¿¡¼­ Á÷Á¢ Ã³¸®
+		// file2 ìƒì„± : try-catch ì˜ˆì™¸ê°€ ë°œìƒí•œ ê³³ì—ì„œ ì§ì ‘ ì²˜ë¦¬
 		System.out.println(createFile2(args[1]));
 	}
 
 	static File createFile(String fileName) throws Exception {
 		if (fileName == null || fileName.equals(""))
-			throw new Exception("ÆÄÀÏ ÀÌ¸§ÀÌ À¯È¿ÇÏÁö ¾Ê½À´Ï´Ù.");
-		File f = new File(fileName);		//  FileÅ¬·¡½ºÀÇ °´Ã¼¸¦ ¸¸µç´Ù.
-     	// File°´Ã¼ÀÇ createNewFile¸Ş¼­µå¸¦ ÀÌ¿ëÇØ¼­ ½ÇÁ¦ ÆÄÀÏÀ» »ı¼ºÇÑ´Ù.
+			throw new Exception("íŒŒì¼ ì´ë¦„ì´ ìœ íš¨í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
+		File f = new File(fileName);		//  Fileí´ë˜ìŠ¤ì˜ ê°ì²´ë¥¼ ë§Œë“ ë‹¤.
+		// Fileê°ì²´ì˜ createNewFileë©”ì„œë“œë¥¼ ì´ìš©í•´ì„œ ì‹¤ì œ íŒŒì¼ì„ ìƒì„±í•œë‹¤.
 		f.createNewFile();
-		return f;		// »ı¼ºµÈ °´Ã¼ÀÇ ÂüÁ¶¸¦ ¹İÈ¯ÇÑ´Ù.
+		return f;		// ìƒì„±ëœ ê°ì²´ì˜ ì°¸ì¡°ë¥¼ ë°˜í™˜í•œë‹¤.
 	}
 
 	private static String createFile2(String fileName) {
 		try {
 			if (fileName == null || fileName.equals(""))
-				throw new Exception("ÆÄÀÏ ÀÌ¸§ÀÌ À¯È¿ÇÏÁö ¾Ê½À´Ï´Ù.");
+				throw new Exception("íŒŒì¼ ì´ë¦„ì´ ìœ íš¨í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 			File f = new File(fileName);
 			f.createNewFile();
-			return f.getName() + " ÆÄÀÏ »ı¼º ¼º°ø.";
+			return f.getName() + " íŒŒì¼ ìƒì„± ì„±ê³µ.";
 		} catch (Exception e) {
-			return e.getMessage() + " ÆÄÀÏ »ı¼º ½ÇÆĞ.";
+			return e.getMessage() + " íŒŒì¼ ìƒì„± ì‹¤íŒ¨.";
 		}
 	}
 }

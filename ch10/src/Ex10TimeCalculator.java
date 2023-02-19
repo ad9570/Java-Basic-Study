@@ -3,19 +3,19 @@ import java.text.*;
 
 class Ex10TimeCalculator {
 	public static void main(String[] args) {
-		String pattern = "yyyy/MM/dd"; 
+		String pattern = "yyyy/MM/dd";
 		DateFormat df = new SimpleDateFormat(pattern);
 		Scanner s = new Scanner(System.in);
 
 		Date inDate = null;
 
-		System.out.println("³¯Â¥¸¦ " + pattern + "ÀÇ ÇüÅÂ·Î ÀÔ·ÂÇØÁÖ¼¼¿ä.(ÀÔ·Â ¿¹ : 2023/01/16)");
+		System.out.println("ë‚ ì§œë¥¼ " + pattern + "ì˜ í˜•íƒœë¡œ ì…ë ¥í•´ì£¼ì„¸ìš”.(ì…ë ¥ ì˜ˆ : 2023/01/16)");
 		while(s.hasNextLine()) {
 			try {
 				inDate = df.parse(s.nextLine());
 				break;
 			} catch(Exception e) {
-				System.out.println("³¯Â¥¸¦ " + pattern + "ÀÇ ÇüÅÂ¿¡ ¸Â°Ô ÀÔ·ÂÇØÁÖ¼¼¿ä.(ÀÔ·Â ¿¹ : 2023/01/16)");
+				System.out.println("ë‚ ì§œë¥¼ " + pattern + "ì˜ í˜•íƒœì— ë§ê²Œ ì…ë ¥í•´ì£¼ì„¸ìš”.(ì…ë ¥ ì˜ˆ : 2023/01/16)");
 			}
 		}
 
@@ -23,6 +23,6 @@ class Ex10TimeCalculator {
 		cal.setTime(inDate);
 		Calendar today = Calendar.getInstance();
 		long day = (cal.getTimeInMillis() - today.getTimeInMillis()) / (60 * 60 * 1000);
-		System.out.println("ÀÔ·ÂÇÏ½Å ³¯Â¥´Â ÇöÀçÀÇ ½Ã°£ Â÷ÀÌ´Â " + day + "½Ã°£ ÀÔ´Ï´Ù.");
+		System.out.println("ì…ë ¥í•˜ì‹  ë‚ ì§œëŠ” í˜„ì¬ì˜ ì‹œê°„ ì°¨ì´ëŠ” " + day + "ì‹œê°„ ì…ë‹ˆë‹¤.");
 	}
 }

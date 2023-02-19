@@ -3,20 +3,20 @@ import java.util.StringJoiner;
 class Ex10PrimitiveToString {
 	public static void main(String[] args) {
 		int iVal = 100;
-		String strVal = String.valueOf(iVal); // ±âº»ÇüÀ» ¹®ÀÚ¿­·Î º¯È¯ÇÑ´Ù.
-		
+		String strVal = String.valueOf(iVal); // ê¸°ë³¸í˜•ì„ ë¬¸ìì—´ë¡œ ë³€í™˜í•œë‹¤.
+
 		double dVal = 200.0;
-		String strVal2 = dVal + "";	// ±âº»ÇüÀ» ¹®ÀÚ¿­·Î º¯È¯ÇÏ´Â ¶Ç ´Ù¸¥ ¹æ¹ı
+		String strVal2 = dVal + "";	// ê¸°ë³¸í˜•ì„ ë¬¸ìì—´ë¡œ ë³€í™˜í•˜ëŠ” ë˜ ë‹¤ë¥¸ ë°©ë²•
 
 		double sum  = Integer.parseInt(strVal) + Double.parseDouble(strVal2);
 		double sum2 = Integer.valueOf(strVal) + Double.valueOf(strVal2);
-		
+
 		System.out.println(String.join("", strVal, " + ", strVal2, " = ") + sum);
 
 		StringJoiner sj = new StringJoiner("");
 		System.out.println(sj.add(strVal).add(" + ").add(strVal2).add(" = ").add(sum + ""));
 
 		Integer i = Integer.valueOf("+25");
-		System.out.println("i = " + i);	// ¼ıÀÚ ¾Õ¿¡ +°¡ ºÙÀº ¹®ÀÚ¿­µµ ¾ç¼ö·Î º¯È¯ ok
+		System.out.println("i = " + i);	// ìˆ«ì ì•ì— +ê°€ ë¶™ì€ ë¬¸ìì—´ë„ ì–‘ìˆ˜ë¡œ ë³€í™˜ ok
 	}
 }

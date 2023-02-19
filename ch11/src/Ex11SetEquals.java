@@ -7,9 +7,9 @@ class Ex11SetEquals {
 		set.add("abc");
 		set.add("abc");
 		set.add(new Person("David",25));
-		set.add(new Person("David",25));	// equals()¿Í hashCode()¸¦ ¿À¹ö¶óÀÌµù ÇÏÁö ¾ÊÀº Å¬·¡½º
+		set.add(new Person("David",25));	// equals()ì™€ hashCode()ë¥¼ ì˜¤ë²„ë¼ì´ë”© í•˜ì§€ ì•Šì€ í´ë˜ìŠ¤
 		set.add(new Room("9", 7));
-		set.add(new Room("9", 7));		// equals()¿Í hashCode()¸¦ ¿À¹ö¶óÀÌµù ÇÑ Å¬·¡½º
+		set.add(new Room("9", 7));		// equals()ì™€ hashCode()ë¥¼ ì˜¤ë²„ë¼ì´ë”© í•œ í´ë˜ìŠ¤
 
 		System.out.println(set);
 	}
@@ -60,6 +60,6 @@ class Room {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(floor, number);	// public static int hash(Object... values) : °¡º¯ÀÎÀÚ
+		return Objects.hash(floor, number);	// public static int hash(Object... values) : ê°€ë³€ì¸ì
 	}
 }

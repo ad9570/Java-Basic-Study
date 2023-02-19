@@ -8,9 +8,9 @@ class Ex15FromTailToHead {
 		for (int j : score) set.add(j);
 		System.out.println("set : " + set);
 
-		System.out.println("50º¸´Ù Å« °ª(from tail) : "  + set.tailSet(50));
-		System.out.println("50º¸´Ù ÀÛÀº °ª(to head) : " + set.headSet(50));
+		System.out.println("50ë³´ë‹¤ í° ê°’(from tail) : "  + set.tailSet(50));
+		System.out.println("50ë³´ë‹¤ ì‘ì€ ê°’(to head) : " + set.headSet(50));
 
-		System.out.println("45¿Í 95 »çÀÌÀÇ °ª : " + set.subSet(45, 95));
+		System.out.println("45ì™€ 95 ì‚¬ì´ì˜ ê°’ : " + set.subSet(45, 95));
 	}
 }

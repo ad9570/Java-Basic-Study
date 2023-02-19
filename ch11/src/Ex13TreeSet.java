@@ -2,10 +2,10 @@ import java.util.*;
 
 class Ex13TreeSet {
 	public static void main(String[] args) {
-		Set<Integer> set1 = new TreeSet<>();	// ÀÚµ¿ Á¤·Ä
+		Set<Integer> set1 = new TreeSet<>();	// ìë™ ì •ë ¬
 		while (set1.size() < 6) {
 			int num = (int) (Math.random() * 45) + 1;
-			set1.add(num);  // num -> new Integer(num), Integer´Â ComparableÀ» °¡Áö°í ÀÖÀ½
+			set1.add(num);  // num -> new Integer(num), IntegerëŠ” Comparableì„ ê°€ì§€ê³  ìˆìŒ
 		}
 		System.out.println(set1);
 
@@ -15,20 +15,20 @@ class Ex13TreeSet {
 				set2.add(new TestNoComp());
 			System.out.println(set2);
 		} catch (ClassCastException e) {
-			System.out.println("ClassCastException ¹ß»ı(TreeSetÀº ºñ±³±âÁØÀÌ ÇÊ¿ä)");
+			System.out.println("ClassCastException ë°œìƒ(TreeSetì€ ë¹„êµê¸°ì¤€ì´ í•„ìš”)");
 		}
 
-		Set<TestComp1> set3 = new TreeSet<>(new TestComp1());	// TestComp1ÀÇ Comparator¸¦ ºñ±³±âÁØÀ¸·Î »ç¿ë
+		Set<TestComp1> set3 = new TreeSet<>(new TestComp1());	// TestComp1ì˜ Comparatorë¥¼ ë¹„êµê¸°ì¤€ìœ¼ë¡œ ì‚¬ìš©
 		while (set3.size() < 6)
 			set3.add(new TestComp1());
 		System.out.println(set3);
 
-		Set<TestComp2> set4 = new TreeSet<>();	// ±âº»ÀûÀ¸·Î TestComp2ÀÇ ComparableÀ» ºñ±³±âÁØÀ¸·Î »ç¿ë
+		Set<TestComp2> set4 = new TreeSet<>();	// ê¸°ë³¸ì ìœ¼ë¡œ TestComp2ì˜ Comparableì„ ë¹„êµê¸°ì¤€ìœ¼ë¡œ ì‚¬ìš©
 		while (set4.size() < 6)
 			set4.add(new TestComp2());
 		System.out.println(set4);
 
-		Set<TestNoComp> set5 = new TreeSet<>(new TestComp1());	// ÇØ´ç °´Ã¼ ¿ÜºÎÀÇ ºñ±³±âÁØ »ç¿ë °¡´É
+		Set<TestNoComp> set5 = new TreeSet<>(new TestComp1());	// í•´ë‹¹ ê°ì²´ ì™¸ë¶€ì˜ ë¹„êµê¸°ì¤€ ì‚¬ìš© ê°€ëŠ¥
 		while (set5.size() < 6)
 			set5.add(new TestNoComp());
 		System.out.println(set5);

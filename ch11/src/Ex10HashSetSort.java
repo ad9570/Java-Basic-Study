@@ -3,18 +3,18 @@ import java.util.*;
 class Ex10HashSetSort {
 	public static void main(String[] args) {
 		Set<Integer> set = new HashSet<>();
-		
+
 		while (set.size() < 6) {
 			int num = (int) (Math.random() * 45) + 1;
 			set.add(num);    // num -> new Integer(num)
 		}
 		System.out.println(set);
 
-		/* SetÀº Á¤·Ä ºÒ°¡´É : Á¤·Ä¿£ ¼ø¼­°¡ ÇÊ¿ä
-		 * setÀ» ´ãÀº List »ı¼º ÈÄ Á¤·Ä
+		/* Setì€ ì •ë ¬ ë¶ˆê°€ëŠ¥ : ì •ë ¬ì—” ìˆœì„œê°€ í•„ìš”
+		 * setì„ ë‹´ì€ List ìƒì„± í›„ ì •ë ¬
 		 */
-		List<Integer> list = new LinkedList<>(set);	// LinkedList(Collection c) : setÀÇ ¸ğµç ¿ä¼Ò¸¦ ´ãÀº List »ı¼º
-		Collections.sort(list);						// Collections.sort(List list) : list¸¦ Á¤·Ä
+		List<Integer> list = new LinkedList<>(set);	// LinkedList(Collection c) : setì˜ ëª¨ë“  ìš”ì†Œë¥¼ ë‹´ì€ List ìƒì„±
+		Collections.sort(list);						// Collections.sort(List list) : listë¥¼ ì •ë ¬
 		System.out.println(list);
 	}
 }

@@ -4,7 +4,7 @@ class Ex12StringBufferMethods {
 		StringBuffer sb1 = new StringBuffer("01");
 		StringBuffer sb2 = sb1.append(23);
 		sb1.append('4').append(56L);
-		
+
 		StringBuffer sb3 = sb1.append(chars);
 		sb3.append(9.0f);
 

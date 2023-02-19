@@ -1,21 +1,21 @@
 class Ex06LiteralNew {
 	public static void main(String[] args) {
-		String str1 = "abc";	// °ªÀÌ °°À¸¸é °°Àº String ÀÎ½ºÅÏ½º °øÀ¯
-		String str2 = "abc";	// °ªÀÌ °°À¸¸é °°Àº String ÀÎ½ºÅÏ½º °øÀ¯
+		String str1 = "abc";	// ê°’ì´ ê°™ìœ¼ë©´ ê°™ì€ String ì¸ìŠ¤í„´ìŠ¤ ê³µìœ 
+		String str2 = "abc";	// ê°’ì´ ê°™ìœ¼ë©´ ê°™ì€ String ì¸ìŠ¤í„´ìŠ¤ ê³µìœ 
 		System.out.println("String str1 = \"abc\";");
 		System.out.println("String str2 = \"abc\";");
 
-		System.out.println("str1 == str2 ?  " + (str1 == str2) + "(ÀÎ½ºÅÏ½º ÁÖ¼Ò ºñ±³)");
-		System.out.println("str1.equals(str2) ? " + str1.equals(str2) + "(ÀúÀåµÈ °ª ºñ±³)");
+		System.out.println("str1 == str2 ?  " + (str1 == str2) + "(ì¸ìŠ¤í„´ìŠ¤ ì£¼ì†Œ ë¹„êµ)");
+		System.out.println("str1.equals(str2) ? " + str1.equals(str2) + "(ì €ì¥ëœ ê°’ ë¹„êµ)");
 		System.out.println();
 
-		String str3 = new String("abc");	// °ªÀÌ °°¾Æµµ °¢°¢ ´Ù¸¥ String ÀÎ½ºÅÏ½º »ç¿ë
-		String str4 = new String("abc");	// °ªÀÌ °°¾Æµµ °¢°¢ ´Ù¸¥ String ÀÎ½ºÅÏ½º »ç¿ë
+		String str3 = new String("abc");	// ê°’ì´ ê°™ì•„ë„ ê°ê° ë‹¤ë¥¸ String ì¸ìŠ¤í„´ìŠ¤ ì‚¬ìš©
+		String str4 = new String("abc");	// ê°’ì´ ê°™ì•„ë„ ê°ê° ë‹¤ë¥¸ String ì¸ìŠ¤í„´ìŠ¤ ì‚¬ìš©
 
 		System.out.println("String str3 = new String(\"abc\");");
 		System.out.println("String str4 = new String(\"abc\");");
 
-		System.out.println("str3 == str4 ? " + (str3 == str4) + "(ÀÎ½ºÅÏ½º ÁÖ¼Ò ºñ±³)");
-		System.out.println("str3.equals(str4) ? " + str3.equals(str4) + "(ÀúÀåµÈ °ª ºñ±³)");
+		System.out.println("str3 == str4 ? " + (str3 == str4) + "(ì¸ìŠ¤í„´ìŠ¤ ì£¼ì†Œ ë¹„êµ)");
+		System.out.println("str3.equals(str4) ? " + str3.equals(str4) + "(ì €ì¥ëœ ê°’ ë¹„êµ)");
 	}
 }

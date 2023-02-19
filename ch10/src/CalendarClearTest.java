@@ -2,8 +2,8 @@ import java.util.Calendar;
 
 public class CalendarClearTest {
 	public static void main(String[] args) {
-		Calendar c1 = Calendar.getInstance();	// c1°ú c2 »çÀÌ¿¡ ¹Ğ¸®ÃÊ ´ÜÀ§ Â÷ÀÌ ¹ß»ı
-		Calendar c2 = Calendar.getInstance();	// ÄÚµå°¡ ¼øÂ÷ÀûÀ¸·Î ½ÇÇàÀÌ µÇ±â ¶§¹®
+		Calendar c1 = Calendar.getInstance();	// c1ê³¼ c2 ì‚¬ì´ì— ë°€ë¦¬ì´ˆ ë‹¨ìœ„ ì°¨ì´ ë°œìƒ
+		Calendar c2 = Calendar.getInstance();	// ì½”ë“œê°€ ìˆœì°¨ì ìœ¼ë¡œ ì‹¤í–‰ì´ ë˜ê¸° ë•Œë¬¸
 		float difference;
 
 		System.out.println("c1 = " + c1);
@@ -14,15 +14,15 @@ public class CalendarClearTest {
 		difference = (c1.getTimeInMillis() - c2.getTimeInMillis()) / (24 * 60 * 60 * 1000f);
 		System.out.println("== Before clear ==");
 		System.out.println("difference = " + difference);
-		System.out.println("Â÷ÀÌ : " + (int) difference + "ÀÏ");
+		System.out.println("ì°¨ì´ : " + (int) difference + "ì¼");
 
-		c1.clear();	// clear()¸¦ ÅëÇØ ¸ğµç ÇÊµå°ªÀ» ÃÊ±âÈ­
-		c2.clear();	// c1°ú c2 »çÀÌÀÇ ¹Ğ¸®ÃÊ ´ÜÀ§ Â÷ÀÌ¸¦ ¾ø¾Ú
+		c1.clear();	// clear()ë¥¼ í†µí•´ ëª¨ë“  í•„ë“œê°’ì„ ì´ˆê¸°í™”
+		c2.clear();	// c1ê³¼ c2 ì‚¬ì´ì˜ ë°€ë¦¬ì´ˆ ë‹¨ìœ„ ì°¨ì´ë¥¼ ì—†ì•°
 		c1.set(2001, 0, 3);
 		c2.set(2001, 0, 1);
 		difference = (c1.getTimeInMillis() - c2.getTimeInMillis()) / (24 * 60 * 60 * 1000f);
 		System.out.println("== After clear ==");
 		System.out.println("difference = " + difference);
-		System.out.println("Â÷ÀÌ : " + (int) difference + "ÀÏ");
+		System.out.println("ì°¨ì´ : " + (int) difference + "ì¼");
 	}
 }

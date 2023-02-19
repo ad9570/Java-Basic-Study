@@ -2,10 +2,10 @@ import java.util.*;
 
 class Ex14SubSet {
 	public static void main(String[] args) {
-		TreeSet<String> set = new TreeSet<>();	// TreeSet : ¹üÀ§ °Ë»ö¿¡ À¯¸®
+		TreeSet<String> set = new TreeSet<>();	// TreeSet : ë²”ìœ„ ê²€ìƒ‰ì— ìœ ë¦¬
 
-		String from = "b";	// Æ÷ÇÔ
-		String to	= "d";	// ¹ÌÆ÷ÇÔ
+		String from = "b";	// í¬í•¨
+		String to	= "d";	// ë¯¸í¬í•¨
 
 		Collections.addAll(set, "abc", "alien", "bat", "car", "Car",
 				"disc", "dance", "dZZZZ", "dzzzz", "elephant", "elevator", "fan", "flower");

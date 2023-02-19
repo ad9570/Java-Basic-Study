@@ -2,9 +2,9 @@ import java.util.*;
 
 class Ex01ArrayList {
     public static void main(String[] args) {
-        // ±âº» ±æÀÌ(capacity)°¡ 10ÀÎ ArrayList¸¦ »ı¼º
+        // ê¸°ë³¸ ê¸¸ì´(capacity)ê°€ 10ì¸ ArrayListë¥¼ ìƒì„±
         ArrayList<Comparable> list1 = new ArrayList<>(10);
-        list1.add(5);   // OK, ¿ÀÅä¹Ú½Ì -> list1.add(new Integer(5));
+        list1.add(5);   // OK, ì˜¤í† ë°•ì‹± -> list1.add(new Integer(5));
         list1.add(4);
         list1.add(2);
         list1.add(0);
@@ -14,24 +14,24 @@ class Ex01ArrayList {
         List<Comparable> sublist = list1.subList(1, 4);
         print(list1, sublist);
 
-        // subList¿Í ±âÁ¸ ¸®½ºÆ®´Â º¯°æ ½Ã »óÈ£ ¿µÇâ
+        // subListì™€ ê¸°ì¡´ ë¦¬ìŠ¤íŠ¸ëŠ” ë³€ê²½ ì‹œ ìƒí˜¸ ì˜í–¥
         sublist.add(6);
         print(list1, sublist);
 
-        // ±âÁ¸ ¸®½ºÆ® º¯°æ ½Ã subList »ç¿ë ºÒ°¡´É
+        // ê¸°ì¡´ ë¦¬ìŠ¤íŠ¸ ë³€ê²½ ì‹œ subList ì‚¬ìš© ë¶ˆê°€ëŠ¥
         list1.remove(4);
         try {
             System.out.println("sublist = " + sublist + "\n");
         } catch (ConcurrentModificationException e) {
-            System.out.println("ConcurrentModificationException ¹ß»ı\n");
+            System.out.println("ConcurrentModificationException ë°œìƒ\n");
         }
 
-        // subList¿Í list1ÀÌ »óÈ£ÀÛ¿ë ÇÏÁö ¾Êµµ·Ï subList¿Í ³»¿ëÀÌ °°Àº »õ·Î¿î ArrayListÀÎ list2 »ı¼º
+        // subListì™€ list1ì´ ìƒí˜¸ì‘ìš© í•˜ì§€ ì•Šë„ë¡ subListì™€ ë‚´ìš©ì´ ê°™ì€ ìƒˆë¡œìš´ ArrayListì¸ list2 ìƒì„±
         ArrayList<Comparable> list2 = new ArrayList<>(list1.subList(1, 4));
         print(list1, list2);
 
-        // Collections : ÄÃ·º¼ÇÀ» ½±°Ô ´Ù·ç´Â ¸Ş¼Òµå¸¦ ¸ğÀº À¯Æ¿ Å¬·¡½º
-        Collections.sort(list1);    // list1°ú list2¸¦ Á¤·ÄÇÑ´Ù.
+        // Collections : ì»¬ë ‰ì…˜ì„ ì‰½ê²Œ ë‹¤ë£¨ëŠ” ë©”ì†Œë“œë¥¼ ëª¨ì€ ìœ í‹¸ í´ë˜ìŠ¤
+        Collections.sort(list1);    // list1ê³¼ list2ë¥¼ ì •ë ¬í•œë‹¤.
         Collections.sort(list2);    // Collections.sort(List l)
         print(list1, list2);
 
@@ -45,12 +45,12 @@ class Ex01ArrayList {
         list2.set(3, "AA");
         print(list1, list2);
 
-        // list1¿¡¼­ list2¿Í °ãÄ¡´Â ºÎºĞ¸¸ ³²±â°í ³ª¸ÓÁö´Â »èÁ¦ÇÑ´Ù.
+        // list1ì—ì„œ list2ì™€ ê²¹ì¹˜ëŠ” ë¶€ë¶„ë§Œ ë‚¨ê¸°ê³  ë‚˜ë¨¸ì§€ëŠ” ì‚­ì œí•œë‹¤.
         System.out.println("list1.retainAll(list2) : " + list1.retainAll(list2) + "\n");
 
         print(list1, list2);
 
-        //  list2¿¡¼­ list1¿¡ Æ÷ÇÔµÈ °´Ã¼µéÀ» »èÁ¦ÇÑ´Ù.
+        //  list2ì—ì„œ list1ì— í¬í•¨ëœ ê°ì²´ë“¤ì„ ì‚­ì œí•œë‹¤.
         for (int i = list2.size() - 1; i >= 0; i--) {
             if (list1.contains(list2.get(i)))
                 list2.remove(i);
@@ -65,10 +65,10 @@ class Ex01ArrayList {
         print(list3, list4);
 
         System.out.println("indexOf(\"1\") = " + list3.indexOf("1"));
-        System.out.println("indexOf(1) = " + list3.indexOf(1) + "\n");  // OK, ¿ÀÅä¹Ú½Ì -> list1.add(new Integer(1));
+        System.out.println("indexOf(1) = " + list3.indexOf(1) + "\n");  // OK, ì˜¤í† ë°•ì‹± -> list1.add(new Integer(1));
 
-        list3.remove(1);                // ÀÎµ¦½º 1¿¡ ÀúÀåµÈ °´Ã¼¸¦ »èÁ¦
-        list4.remove(Integer.valueOf(1));   // °ªÀÌ 1ÀÎ Integer °´Ã¼¸¦ »èÁ¦
+        list3.remove(1);                // ì¸ë±ìŠ¤ 1ì— ì €ì¥ëœ ê°ì²´ë¥¼ ì‚­ì œ
+        list4.remove(Integer.valueOf(1));   // ê°’ì´ 1ì¸ Integer ê°ì²´ë¥¼ ì‚­ì œ
         print(list3, list4);
     }
 

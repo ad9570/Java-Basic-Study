@@ -3,30 +3,30 @@ import java.util.*;
 class Ex04AddAndRoll {
 	public static void main(String[] args) {
 		Calendar date = Calendar.getInstance();
-		date.set(2022, 7, 31);	// 2022³â 8¿ù 31ÀÏ
+		date.set(2022, 7, 31);	// 2022ë…„ 8ì›” 31ì¼
 
-		// add(ÇÊµå, °ª)´Â ´Ù¸¥ ÇÊµå¿¡ ¿µÇâÀ» ÁÖ¸ç Áõ°¡/°¨¼Ò
+		// add(í•„ë“œ, ê°’)ëŠ” ë‹¤ë¥¸ í•„ë“œì— ì˜í–¥ì„ ì£¼ë©° ì¦ê°€/ê°ì†Œ
 		System.out.println(toString(date));
-		System.out.println("== add : 1ÀÏ ÈÄ ==");
+		System.out.println("== add : 1ì¼ í›„ ==");
 		date.add(Calendar.DATE, 1);
 		System.out.println(toString(date));
 
-		System.out.println("== add : 9´Ş Àü ==");
+		System.out.println("== add : 9ë‹¬ ì „ ==");
 		date.add(Calendar.MONTH, -9);
 		System.out.println(toString(date));
 
-		// roll(ÇÊµå, °ª)Àº ´Ù¸¥ ÇÊµå¿¡ ¿µÇâÀ» ÁÖÁö ¾ÊÀ¸¸ç(°ª ¹üÀ§ ÃÊ°ú½Ã ¸®¼Â) Áõ°¡/°¨¼Ò
-		System.out.println("== roll : 7ÀÏ Àü ==");
+		// roll(í•„ë“œ, ê°’)ì€ ë‹¤ë¥¸ í•„ë“œì— ì˜í–¥ì„ ì£¼ì§€ ì•Šìœ¼ë©°(ê°’ ë²”ìœ„ ì´ˆê³¼ì‹œ ë¦¬ì…‹) ì¦ê°€/ê°ì†Œ
+		System.out.println("== roll : 7ì¼ ì „ ==");
 		date.roll(Calendar.DATE, -7);
 		System.out.println(toString(date));
 
-		System.out.println("== roll : 3´Ş ÈÄ ==");
+		System.out.println("== roll : 3ë‹¬ í›„ ==");
 		date.roll(Calendar.MONTH, 3);
 		System.out.println(toString(date));
 	}
 
 	public static String toString(Calendar date) {
-		return date.get(Calendar.YEAR) + "³â " + (date.get(Calendar.MONTH) + 1) + "¿ù "
-				+ date.get(Calendar.DATE) + "ÀÏ";
+		return date.get(Calendar.YEAR) + "ë…„ " + (date.get(Calendar.MONTH) + 1) + "ì›” "
+				+ date.get(Calendar.DATE) + "ì¼";
 	}
 }

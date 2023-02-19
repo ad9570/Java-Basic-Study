@@ -4,48 +4,48 @@ class Ex04CatchBlocks {
 
 		try {
 			System.out.println(2);
-			System.out.println(args[0]);	// ArrayIndexOutOfBoundsException ¹ß»ı
-			System.out.println(3);	// ½ÇÇàµÇÁö ¾Ê´Â´Ù.
+			System.out.println(args[0]);	// ArrayIndexOutOfBoundsException ë°œìƒ
+			System.out.println(3);	// ì‹¤í–‰ë˜ì§€ ì•ŠëŠ”ë‹¤.
 		} catch (ArithmeticException ae)	{
 			if (ae instanceof ArithmeticException)
 				System.out.println("ArithmeticException");
-		} catch (ArrayIndexOutOfBoundsException ie) {	// Ã³¸®
+		} catch (ArrayIndexOutOfBoundsException ie) {	// ì²˜ë¦¬
 			if (ie instanceof ArrayIndexOutOfBoundsException)
 				System.out.println("ArrayIndexOutOfBoundsException");
 		} catch (Exception e){
 			System.out.println("Exception");
-		}	// try-catchÀÇ ³¡
+		}	// try-catchì˜ ë
 		System.out.println(4);
 
 		try {
 			System.out.println(5);
-			System.out.println(0 / 0);	// ArithmeticException ¹ß»ı
-			System.out.println(6); 	// ½ÇÇàµÇÁö ¾Ê´Â´Ù.
-		} catch (ArithmeticException ae)	{	// Ã³¸®
-			if (ae instanceof ArithmeticException) 
+			System.out.println(0 / 0);	// ArithmeticException ë°œìƒ
+			System.out.println(6); 	// ì‹¤í–‰ë˜ì§€ ì•ŠëŠ”ë‹¤.
+		} catch (ArithmeticException ae)	{	// ì²˜ë¦¬
+			if (ae instanceof ArithmeticException)
 				System.out.println("ArithmeticException");
 		} catch (ArrayIndexOutOfBoundsException ie) {
 			if (ie instanceof ArrayIndexOutOfBoundsException)
 				System.out.println("ArrayIndexOutOfBoundsException");
 		} catch (Exception e){
 			System.out.println("Exception");
-		}	// try-catchÀÇ ³¡
+		}	// try-catchì˜ ë
 		System.out.println(7);
 
 		try {
 			System.out.println(8);
 			String s = null;
-			System.out.println(s.length());	// NullPointerException ¹ß»ı
-			System.out.println(9); 	// ½ÇÇàµÇÁö ¾Ê´Â´Ù.
+			System.out.println(s.length());	// NullPointerException ë°œìƒ
+			System.out.println(9); 	// ì‹¤í–‰ë˜ì§€ ì•ŠëŠ”ë‹¤.
 		} catch (ArithmeticException ae)	{
 			if (ae instanceof ArithmeticException)
 				System.out.println("ArithmeticException");
 		} catch (ArrayIndexOutOfBoundsException ie) {
 			if (ie instanceof ArrayIndexOutOfBoundsException)
 				System.out.println("ArrayIndexOutOfBoundsException");
-		} catch (Exception e){	// Ã³¸®, ¸ğµç ¿¹¿ÜÀÇ ÃÖ°íÁ¶»óÀÎ Exception
+		} catch (Exception e){	// ì²˜ë¦¬, ëª¨ë“  ì˜ˆì™¸ì˜ ìµœê³ ì¡°ìƒì¸ Exception
 			System.out.println("Exception");
-		}	// try-catchÀÇ ³¡
+		}	// try-catchì˜ ë
 		System.out.println(10);
 	}
 }

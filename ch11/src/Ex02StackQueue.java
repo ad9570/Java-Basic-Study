@@ -3,8 +3,8 @@ import java.util.*;
 class Ex02StackQueue {
 	public static void main(String[] args) {
 		Stack<String> st = new Stack<>();
-		Queue<String> q = new LinkedList<>();	// QueueÀÎÅÍÆäÀÌ½ºÀÇ ±¸ÇöÃ¼ÀÎ LinkedList¸¦ »ç¿ë
-		
+		Queue<String> q = new LinkedList<>();	// Queueì¸í„°í˜ì´ìŠ¤ì˜ êµ¬í˜„ì²´ì¸ LinkedListë¥¼ ì‚¬ìš©
+
 		st.push("1");
 		st.push("2");
 		st.push("3");
@@ -19,12 +19,12 @@ class Ex02StackQueue {
 
 		System.out.println("= Stack =");
 		while(!st.empty()) {
-			System.out.println(st.pop()); // ½ºÅÃ¿¡¼­ ¿ä¼Ò ÇÏ³ª¸¦ ²¨³»¼­ Ãâ·Â
+			System.out.println(st.pop()); // ìŠ¤íƒì—ì„œ ìš”ì†Œ í•˜ë‚˜ë¥¼ êº¼ë‚´ì„œ ì¶œë ¥
 		}
 
 		System.out.println("= Queue =");
 		while(!q.isEmpty()) {
-			System.out.println(q.poll()); // Å¥¿¡¼­ ¿ä¼Ò ÇÏ³ª¸¦ ²¨³»¼­ Ãâ·Â
+			System.out.println(q.poll()); // íì—ì„œ ìš”ì†Œ í•˜ë‚˜ë¥¼ êº¼ë‚´ì„œ ì¶œë ¥
 		}
 	}
 }

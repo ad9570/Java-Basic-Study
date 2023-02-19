@@ -1,11 +1,11 @@
 class Ex08UncheckedException {
 	public static void main(String[] args) {
 		try {
-			throw new RuntimeException("RuntimeException Å¬·¡½º¿Í ±× ÀÚ¼Õµé");
+			throw new RuntimeException("RuntimeException í´ë˜ìŠ¤ì™€ ê·¸ ìì†ë“¤");
 		} catch (RuntimeException e) {
-			System.out.println(e.getMessage() + " : ¿¹¿Ü Ã³¸® ¼±ÅÃ");
+			System.out.println(e.getMessage() + " : ì˜ˆì™¸ ì²˜ë¦¬ ì„ íƒ");
 		}
-		
-		throw new RuntimeException();	// ÄÄÆÄÀÏ ¹× ½ÇÇà °¡´É, ·±Å¸ÀÓ ¿¡·¯ ¹ß»ıÀ¸·Î ÇÁ·Î±×·¥ ºñÁ¤»ó Á¾·á
+
+		throw new RuntimeException();	// ì»´íŒŒì¼ ë° ì‹¤í–‰ ê°€ëŠ¥, ëŸ°íƒ€ì„ ì—ëŸ¬ ë°œìƒìœ¼ë¡œ í”„ë¡œê·¸ë¨ ë¹„ì •ìƒ ì¢…ë£Œ
 	}
 }

@@ -1,13 +1,13 @@
 class Ex01TryCatchNormal {
 	public static void main(String args[]) {
-			System.out.println(1);			
-			try {
-				System.out.println(2);
-				System.out.println(3);
-				// ¿¹¿Ü ¹ß»ı X
-			} catch (Exception e)    {
-				System.out.println(4);  // ½ÇÇàµÇÁö ¾Ê´Â´Ù.
-			} // try-catchÀÇ ³¡
-			System.out.println(5);
+		System.out.println(1);
+		try {
+			System.out.println(2);
+			System.out.println(3);
+			// ì˜ˆì™¸ ë°œìƒ X
+		} catch (Exception e)    {
+			System.out.println(4);  // ì‹¤í–‰ë˜ì§€ ì•ŠëŠ”ë‹¤.
+		} // try-catchì˜ ë
+		System.out.println(5);
 	}
 }

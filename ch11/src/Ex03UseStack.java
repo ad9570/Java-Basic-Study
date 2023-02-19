@@ -18,18 +18,18 @@ public class Ex03UseStack {
 				char ch = expression.charAt(i);
 
 				if (ch == '(') {
-					st.push(ch + "");	// ¿©´Â °ıÈ£´Â ½ºÅÃ¿¡ push
+					st.push(ch + "");	// ì—¬ëŠ” ê´„í˜¸ëŠ” ìŠ¤íƒì— push
 				} else if (ch == ')') {
-					st.pop();				// ´İ´Â °ıÈ£´Â ½ºÅÃ¿¡¼­ pop
+					st.pop();				// ë‹«ëŠ” ê´„í˜¸ëŠ” ìŠ¤íƒì—ì„œ pop
 				}
 			}
 
 			if (st.isEmpty())
-				System.out.println("°ıÈ£°¡ ÀÏÄ¡ÇÕ´Ï´Ù.");
+				System.out.println("ê´„í˜¸ê°€ ì¼ì¹˜í•©ë‹ˆë‹¤.");
 			else
-				System.out.println("°ıÈ£°¡ ÀÏÄ¡ÇÏÁö ¾Ê½À´Ï´Ù. : ( °¡ ´õ ¸¹À½");
+				System.out.println("ê´„í˜¸ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤. : ( ê°€ ë” ë§ìŒ");
 		} catch (EmptyStackException e) {
-			System.out.println("°ıÈ£°¡ ÀÏÄ¡ÇÏÁö ¾Ê½À´Ï´Ù. : ) °¡ ´õ ¸¹À½");
+			System.out.println("ê´„í˜¸ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤. : ) ê°€ ë” ë§ìŒ");
 		}
 	}
 }

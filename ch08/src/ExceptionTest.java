@@ -1,6 +1,6 @@
 public class ExceptionTest {
     public static void main(String[] args) {
-//        system.out.println(args[0]);    // ÄÄÆÄÀÏ ¿¡·¯
-//        System.out.println(args[0]);    // ·±Å¸ÀÓ ¿¡·¯
+//        system.out.println(args[0]);    // ì»´íŒŒì¼ ì—ëŸ¬
+//        System.out.println(args[0]);    // ëŸ°íƒ€ì„ ì—ëŸ¬
     }
 }

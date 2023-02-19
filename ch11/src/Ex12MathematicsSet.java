@@ -37,9 +37,9 @@ class Ex12MathematicsSet {
 			unionSet.add(it.next());
 
 		System.out.println("== Iterator ==");
-		System.out.println("A ¡û B = " + interSet);  // ÇÑ±Û ¤§À» ´©¸£°í ÇÑÀÚÅ°
+		System.out.println("A âˆ© B = " + interSet);  // í•œê¸€ ã„·ì„ ëˆ„ë¥´ê³  í•œìí‚¤
 		System.out.println("A - B = " + differSet);
-		System.out.println("A U B = " + unionSet);  // ÇÑ±Û ¤§À» ´©¸£°í ÇÑÀÚÅ°
+		System.out.println("A U B = " + unionSet);  // í•œê¸€ ã„·ì„ ëˆ„ë¥´ê³  í•œìí‚¤
 
 		interSet = new HashSet<>(setA);
 		interSet.retainAll(setB);
@@ -51,7 +51,7 @@ class Ex12MathematicsSet {
 		unionSet.addAll(setB);
 
 		System.out.println("== retainAll, removeAll, addAll ==");
-		System.out.println("A ¡û B = " + interSet);
+		System.out.println("A âˆ© B = " + interSet);
 		System.out.println("A - B = " + differSet);
 		System.out.println("A U B = " + unionSet);
 	}

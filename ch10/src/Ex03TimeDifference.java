@@ -2,29 +2,29 @@ import java.util.*;
 
 class Ex03TimeDifference {
 	public static void main(String[] args) {
-		final String[] TIME_UNIT = {"ÃÊ ", "ºĞ ", "½Ã°£ "};
+		final String[] TIME_UNIT = {"ì´ˆ ", "ë¶„ ", "ì‹œê°„ "};
 
 		Calendar time = Calendar.getInstance();
 		Calendar now = Calendar.getInstance();
 
-		time.set(Calendar.HOUR_OF_DAY, 11); // timeÀ» 11½Ã 11ºĞ 11ÃÊ·Î ¼³Á¤
+		time.set(Calendar.HOUR_OF_DAY, 11); // timeì„ 11ì‹œ 11ë¶„ 11ì´ˆë¡œ ì„¤ì •
 		time.set(Calendar.MINUTE, 11);
 		time.set(Calendar.SECOND, 11);
 
-		System.out.println("time : " + time.get(Calendar.HOUR_OF_DAY) + "½Ã "
-				+ time.get(Calendar.MINUTE) + "ºĞ " + time.get(Calendar.SECOND) + "ÃÊ");
-		System.out.println("now : " + now.get(Calendar.HOUR_OF_DAY) + "½Ã "
-				+ now.get(Calendar.MINUTE) + "ºĞ " + now.get(Calendar.SECOND) + "ÃÊ");
+		System.out.println("time : " + time.get(Calendar.HOUR_OF_DAY) + "ì‹œ "
+				+ time.get(Calendar.MINUTE) + "ë¶„ " + time.get(Calendar.SECOND) + "ì´ˆ");
+		System.out.println("now : " + now.get(Calendar.HOUR_OF_DAY) + "ì‹œ "
+				+ now.get(Calendar.MINUTE) + "ë¶„ " + now.get(Calendar.SECOND) + "ì´ˆ");
 
 		long difference = Math.abs(now.getTimeInMillis() - time.getTimeInMillis()) / 1000;
-		System.out.println("now¿Í timeÀÇ Â÷ÀÌ´Â " + difference + "ÃÊ ÀÔ´Ï´Ù.");
+		System.out.println("nowì™€ timeì˜ ì°¨ì´ëŠ” " + difference + "ì´ˆ ì…ë‹ˆë‹¤.");
 
 		StringBuilder tmp = new StringBuilder();
-		for (int i = TIME_UNIT.length - 1; i >= 0; i--) { 	// Å« ´ÜÀ§¸¦ ¸ÕÀú °è»êÇÑ´Ù.
+		for (int i = TIME_UNIT.length - 1; i >= 0; i--) { 	// í° ë‹¨ìœ„ë¥¼ ë¨¼ì € ê³„ì‚°í•œë‹¤.
 			int scale = (int) Math.pow(60, i);
 			tmp.append(difference / scale).append(TIME_UNIT[i]);
 			difference %= scale;
-		} 
-		System.out.println("½ÃºĞÃÊ·Î º¯È¯ÇÏ¸é " + tmp + "ÀÔ´Ï´Ù.");
+		}
+		System.out.println("ì‹œë¶„ì´ˆë¡œ ë³€í™˜í•˜ë©´ " + tmp + "ì…ë‹ˆë‹¤.");
 	}
 }

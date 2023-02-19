@@ -2,17 +2,17 @@ class Ex16AutoBoxing {
 	public static void main(String[] args) {
 		int i1 = 10;
 
-		// ±âº»ÇüÀ» ÂüÁ¶ÇüÀ¸·Î Çüº¯È¯(Çüº¯È¯ »ı·«°¡´É)
+		// ê¸°ë³¸í˜•ì„ ì°¸ì¡°í˜•ìœ¼ë¡œ í˜•ë³€í™˜(í˜•ë³€í™˜ ìƒëµê°€ëŠ¥)
 		Integer io = (Integer)i1; // Integer io = Integer.valueOf(i);
 		Object o = (Object)i1;    // Object o = (Object)Integer.valueOf(i);
 
 		Long lo = 100L;  // Long lo = new Long(100L);
 
-		int i2 = io + 10;   // ÂüÁ¶Çü°ú ±âº»Çü°£ÀÇ ¿¬»ê °¡´É
-		long l = io + lo;  // ÂüÁ¶Çü °£ÀÇ µ¡¼Àµµ °¡´É
+		int i2 = io + 10;   // ì°¸ì¡°í˜•ê³¼ ê¸°ë³¸í˜•ê°„ì˜ ì—°ì‚° ê°€ëŠ¥
+		long l = io + lo;  // ì°¸ì¡°í˜• ê°„ì˜ ë§ì…ˆë„ ê°€ëŠ¥
 
 		Float fo = new Float(1.0f);
-//		float f = (float)fo;  // ÂüÁ¶ÇüÀ» ±âº»ÇüÀ¸·Î Çüº¯È¯µµ °¡´É(Çüº¯È¯ »ı·«°¡´É)
+//		float f = (float)fo;  // ì°¸ì¡°í˜•ì„ ê¸°ë³¸í˜•ìœ¼ë¡œ í˜•ë³€í™˜ë„ ê°€ëŠ¥(í˜•ë³€í™˜ ìƒëµê°€ëŠ¥)
 		float f = fo;
 
 		System.out.println("i1 = " + i1);

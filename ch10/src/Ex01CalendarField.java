@@ -2,28 +2,28 @@ import java.util.*;
 
 class Ex01CalendarField {
 	public static void main(String[] args) {
-		// ±âº»ÀûÀ¸·Î ÇöÀç³¯Â¥¿Í ½Ã°£À¸·Î ¼³Á¤µÈ´Ù.
+		// ê¸°ë³¸ì ìœ¼ë¡œ í˜„ì¬ë‚ ì§œì™€ ì‹œê°„ìœ¼ë¡œ ì„¤ì •ëœë‹¤.
 		Calendar today = Calendar.getInstance();
-		// ³¯Â¥ °ü·Ã ÇÊµå
-		System.out.println("³â : " + today.get(Calendar.YEAR));
- 	    System.out.println("¿ù(0~11) : " + today.get(Calendar.MONTH));
- 	    System.out.println("¿ù : " + today.get(Calendar.MONTH) + 1);
-		System.out.println("ÀÏ : " + today.get(Calendar.DATE));
-		System.out.println("¿äÀÏ(1:ÀÏ¿äÀÏ, ..., 7:Åä¿äÀÏ) : " + today.get(Calendar.DAY_OF_WEEK));
-	  	System.out.println("¿¬Áß ¸î Â° ÁÖ : " + today.get(Calendar.WEEK_OF_YEAR));
-		System.out.println("¿ùÁß ¸î Â° ÁÖ : " + today.get(Calendar.WEEK_OF_MONTH));
-		System.out.println("¿¬Áß ¸î Â° ÀÏ : " + today.get(Calendar.DAY_OF_YEAR));
-		System.out.println("¿ùÁß ¸î Â° ÀÏ : " + today.get(Calendar.DAY_OF_MONTH));	// DATE¿Í °°´Ù.
-	 	System.out.println("ÀÌ ´ŞÀÇ ¸î Â° ?¿äÀÏ : " + today.get(Calendar.DAY_OF_WEEK_IN_MONTH));
-		System.out.println("ÀÌ ´ŞÀÇ ¸»ÀÏ : " + today.getActualMaximum(Calendar.DATE));
-		// ½Ã°£ °ü·Ã ÇÊµå
-		System.out.println("¿ÀÀü_¿ÀÈÄ(0:¿ÀÀü, 1:¿ÀÈÄ) : " + today.get(Calendar.AM_PM));
-		System.out.println("½Ã(12½Ã) : " + today.get(Calendar.HOUR));
-		System.out.println("½Ã(24½Ã) : " + today.get(Calendar.HOUR_OF_DAY));
-		System.out.println("ºĞ : " + today.get(Calendar.MINUTE));
-		System.out.println("ÃÊ : " + today.get(Calendar.SECOND));
-		System.out.println("1/1000ÃÊ : " + today.get(Calendar.MILLISECOND));
-		System.out.println("TimeZone(1/1000ÃÊ) : " + today.get(Calendar.ZONE_OFFSET));
+		// ë‚ ì§œ ê´€ë ¨ í•„ë“œ
+		System.out.println("ë…„ : " + today.get(Calendar.YEAR));
+		System.out.println("ì›”(0~11) : " + today.get(Calendar.MONTH));
+		System.out.println("ì›” : " + today.get(Calendar.MONTH) + 1);
+		System.out.println("ì¼ : " + today.get(Calendar.DATE));
+		System.out.println("ìš”ì¼(1:ì¼ìš”ì¼, ..., 7:í† ìš”ì¼) : " + today.get(Calendar.DAY_OF_WEEK));
+		System.out.println("ì—°ì¤‘ ëª‡ ì§¸ ì£¼ : " + today.get(Calendar.WEEK_OF_YEAR));
+		System.out.println("ì›”ì¤‘ ëª‡ ì§¸ ì£¼ : " + today.get(Calendar.WEEK_OF_MONTH));
+		System.out.println("ì—°ì¤‘ ëª‡ ì§¸ ì¼ : " + today.get(Calendar.DAY_OF_YEAR));
+		System.out.println("ì›”ì¤‘ ëª‡ ì§¸ ì¼ : " + today.get(Calendar.DAY_OF_MONTH));	// DATEì™€ ê°™ë‹¤.
+		System.out.println("ì´ ë‹¬ì˜ ëª‡ ì§¸ ?ìš”ì¼ : " + today.get(Calendar.DAY_OF_WEEK_IN_MONTH));
+		System.out.println("ì´ ë‹¬ì˜ ë§ì¼ : " + today.getActualMaximum(Calendar.DATE));
+		// ì‹œê°„ ê´€ë ¨ í•„ë“œ
+		System.out.println("ì˜¤ì „_ì˜¤í›„(0:ì˜¤ì „, 1:ì˜¤í›„) : " + today.get(Calendar.AM_PM));
+		System.out.println("ì‹œ(12ì‹œ) : " + today.get(Calendar.HOUR));
+		System.out.println("ì‹œ(24ì‹œ) : " + today.get(Calendar.HOUR_OF_DAY));
+		System.out.println("ë¶„ : " + today.get(Calendar.MINUTE));
+		System.out.println("ì´ˆ : " + today.get(Calendar.SECOND));
+		System.out.println("1/1000ì´ˆ : " + today.get(Calendar.MILLISECOND));
+		System.out.println("TimeZone(1/1000ì´ˆ) : " + today.get(Calendar.ZONE_OFFSET));
 		System.out.println("TimeZone(-12~+12) : " + (today.get(Calendar.ZONE_OFFSET) / (60 * 60 * 1000)));
 	}
 }

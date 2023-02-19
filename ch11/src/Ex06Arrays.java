@@ -23,19 +23,19 @@ class Ex06Arrays {
 
         int[] arr7 = new int[5];
         Arrays.fill(arr7, 9);  // arr=[9,9,9,9,9]
-		System.out.println("arr7(fill) = " + Arrays.toString(arr7));
+        System.out.println("arr7(fill) = " + Arrays.toString(arr7));
 
         Arrays.fill(arr7, 1, 3 ,7);  // arr=[9,7,7,9,9]
         System.out.println("arr7(fill from to) = " + Arrays.toString(arr7));
 
-        Arrays.setAll(arr7, i -> (int) (Math.random() * 5) + 1);	// i -> (int) (Math.random() * 5) + 1 : ¶÷´Ù½Ä
+        Arrays.setAll(arr7, i -> (int) (Math.random() * 5) + 1);	// i -> (int) (Math.random() * 5) + 1 : ëŒë‹¤ì‹
         System.out.println("arr7(setAll) = " + Arrays.toString(arr7));
 
 //		for (int i = 0; i < arr.length; i++) {
         for (int i : arr7) {
             char[] graph = new char[i];
-            Arrays.fill(graph, '*');	// ÇöÀç ¹è¿­¿¡ ÀúÀåµÈ °ª ¸¸Å­ÀÇ ±æÀÌ¸¦ °¡Áø '*'¹è¿­ »ı¼º
-            System.out.println(new String(graph) + i);	// ¹®ÀÚ¹è¿­ -> ¹®ÀÚ¿­ : String »ı¼ºÀÚ / ¹®ÀÚ¿­ -> ¹®ÀÚ¹è¿­ : toCharArray()
+            Arrays.fill(graph, '*');	// í˜„ì¬ ë°°ì—´ì— ì €ì¥ëœ ê°’ ë§Œí¼ì˜ ê¸¸ì´ë¥¼ ê°€ì§„ '*'ë°°ì—´ ìƒì„±
+            System.out.println(new String(graph) + i);	// ë¬¸ìë°°ì—´ -> ë¬¸ìì—´ : String ìƒì„±ì / ë¬¸ìì—´ -> ë¬¸ìë°°ì—´ : toCharArray()
         }
 
         String[][] str2D1 = new String[][]{{"aaa", "bbb"}, {"AAA", "BBB"}};
@@ -46,11 +46,11 @@ class Ex06Arrays {
 
         char[] chArr = {'A', 'D', 'C', 'B', 'E'};
 
-		System.out.println("== Before sorting ==");
+        System.out.println("== Before sorting ==");
         System.out.println("chArr = " + Arrays.toString(chArr));
         System.out.println("index of B(binary) = " + Arrays.binarySearch(chArr, 'B'));
 
-		Arrays.sort(chArr);
+        Arrays.sort(chArr);
 
         System.out.println("== After sorting ==");
         System.out.println("chArr = " + Arrays.toString(chArr));

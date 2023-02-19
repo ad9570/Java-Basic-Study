@@ -3,7 +3,7 @@ class Ex12ReThrowing {
 		try  {
 			method();
 		} catch (Exception e)	{
-			System.out.println("main()©║╪╜ ©╧©э╟║ цЁ╦╝╣г╬З╫ю╢о╢ы.");
+			System.out.println("main()Л≈░Л└° Л≤┬Л≥╦Й╟─ Л╡≤К╕╛К░≤Л≈┬Л┼╣К▀┬К▀╓.");
 		}
 	}
 
@@ -11,8 +11,8 @@ class Ex12ReThrowing {
 		try {
 			throw new Exception();
 		} catch (Exception e) {
-			System.out.println("method()©║╪╜ ©╧©э╟║ цЁ╦╝╣г╬З╫ю╢о╢ы.");
-			throw e;			// ╢ы╫ц ©╧©э╦╕ ╧ъ╩Щ╫це╡╢ы.
+			System.out.println("method()Л≈░Л└° Л≤┬Л≥╦Й╟─ Л╡≤К╕╛К░≤Л≈┬Л┼╣К▀┬К▀╓.");
+			throw e;			// К▀╓Л▀° Л≤┬Л≥╦К╔╪ К╟°Л┐²Л▀°М┌╗К▀╓.
 		}
 	}
 }

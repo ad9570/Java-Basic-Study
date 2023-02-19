@@ -21,13 +21,13 @@ class Ex02Pid {
 		Person p2 = new Person(9009291234567L);
 
 		if(p1.equals(p2))
-			System.out.println("p1°ú p2´Â °°Àº »ç¶÷ÀÔ´Ï´Ù.");
+			System.out.println("p1ê³¼ p2ëŠ” ê°™ì€ ì‚¬ëŒì…ë‹ˆë‹¤.");
 		else
-			System.out.println("p1°ú p2´Â ´Ù¸¥ »ç¶÷ÀÔ´Ï´Ù.");
+			System.out.println("p1ê³¼ p2ëŠ” ë‹¤ë¥¸ ì‚¬ëŒì…ë‹ˆë‹¤.");
 
 		if(p1 == p2)
-			System.out.println("p1°ú p2´Â °°Àº °´Ã¼ÀÔ´Ï´Ù.");
+			System.out.println("p1ê³¼ p2ëŠ” ê°™ì€ ê°ì²´ì…ë‹ˆë‹¤.");
 		else
-			System.out.println("p1°ú p2´Â ´Ù¸¥ °´Ã¼ÀÔ´Ï´Ù.");
+			System.out.println("p1ê³¼ p2ëŠ” ë‹¤ë¥¸ ê°ì²´ì…ë‹ˆë‹¤.");
 	}
 }

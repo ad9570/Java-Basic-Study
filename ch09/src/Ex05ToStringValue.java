@@ -5,7 +5,7 @@ class Card2 {
 	String number;
 
 	Card2() {
-		this("DIAMOND", "7");  // Card(String kind, int number)¸¦ È£Ãâ
+		this("DIAMOND", "7");  // Card(String kind, int number)ë¥¼ í˜¸ì¶œ
 	}
 
 	Card2(String kind, String number) {
@@ -13,12 +13,12 @@ class Card2 {
 		this.number = number;
 	}
 
-	// Object Å¬·¡½ºÀÇ toString()À» ¿À¹ö¶óÀÌµù
+	// Object í´ë˜ìŠ¤ì˜ toString()ì„ ì˜¤ë²„ë¼ì´ë”©
 	public String toString() {
 		return "kind : " + kind + ", number : " + number;
 	}
 
-	// Object Å¬·¡½ºÀÇ equals()¸¦ ¿À¹ö¶óÀÌµù
+	// Object í´ë˜ìŠ¤ì˜ equals()ë¥¼ ì˜¤ë²„ë¼ì´ë”©
 	public boolean equals(Object obj) {
 		if (!(obj instanceof Card2))
 			return false;
@@ -26,9 +26,9 @@ class Card2 {
 		return this.kind.equals(c.kind) && this.number.equals(c.number);
 	}
 
-	// equals()¸¦ ¿À¹ö¶óÀÌµù ÇÏ¸é hashCode()µµ ¿À¹ö¶óÀÌµù ÇØ¾ß ÇÔ
-	// Objects : °´Ã¼ °ü·Ã ¸Ş¼­µå¸¦ Á¦°øÇÏ´Â À¯Æ¿ Å¬·¡½º
-	// Objects.hash() : ¸Å°³º¯¼ö°¡ °¡º¯ÀÎÀÚ(Object...) -> ¿©±â¿¡ ºñ±³ÇÏ°í½ÍÀº iv¸¦ °¹¼ö »ó°ü ¾øÀÌ ¸ğµÎ ³ÖÀ¸¸é µÊ
+	// equals()ë¥¼ ì˜¤ë²„ë¼ì´ë”© í•˜ë©´ hashCode()ë„ ì˜¤ë²„ë¼ì´ë”© í•´ì•¼ í•¨
+	// Objects : ê°ì²´ ê´€ë ¨ ë©”ì„œë“œë¥¼ ì œê³µí•˜ëŠ” ìœ í‹¸ í´ë˜ìŠ¤
+	// Objects.hash() : ë§¤ê°œë³€ìˆ˜ê°€ ê°€ë³€ì¸ì(Object...) -> ì—¬ê¸°ì— ë¹„êµí•˜ê³ ì‹¶ì€ ivë¥¼ ê°¯ìˆ˜ ìƒê´€ ì—†ì´ ëª¨ë‘ ë„£ìœ¼ë©´ ë¨
 	public int hashCode() {
 		return Objects.hash(kind, number);
 	}

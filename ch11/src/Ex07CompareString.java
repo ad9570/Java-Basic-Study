@@ -4,13 +4,13 @@ class Ex07CompareString {
 	public static void main(String[] args) {
 		String[] strArr = {"cat", "Dog", "lion", "tiger"};
 
-		Arrays.sort(strArr); // StringÀÇ Comparable(±âº» Á¤·Ä ¹æ½Ä)±¸Çö¿¡ ÀÇÇÑ Á¤·Ä
+		Arrays.sort(strArr); // Stringì˜ Comparable(ê¸°ë³¸ ì •ë ¬ ë°©ì‹)êµ¬í˜„ì— ì˜í•œ ì •ë ¬
 		System.out.println("strArr = " + Arrays.toString(strArr));
 
-		Arrays.sort(strArr, String.CASE_INSENSITIVE_ORDER); // ´ë¼Ò¹®ÀÚ ±¸ºĞ ¾ÈÇÏ´Â Á¤·Ä ¹æ½Ä
+		Arrays.sort(strArr, String.CASE_INSENSITIVE_ORDER); // ëŒ€ì†Œë¬¸ì êµ¬ë¶„ ì•ˆí•˜ëŠ” ì •ë ¬ ë°©ì‹
 		System.out.println("strArr = " + Arrays.toString(strArr));
 
-		Arrays.sort(strArr, new DescStr<>()); // ¿ª¼ø Á¤·Ä ¹æ½Ä
+		Arrays.sort(strArr, new DescStr<>()); // ì—­ìˆœ ì •ë ¬ ë°©ì‹
 		System.out.println("strArr = " + Arrays.toString(strArr));
 	}
 }
@@ -18,11 +18,11 @@ class Ex07CompareString {
 class DescStr<String> implements Comparator<String> {
 	public int compare(Object o1, Object o2) {
 		if (o1 instanceof Comparable && o2 instanceof Comparable) {
-			Comparable c1 = (Comparable) o1;	// o1ÀÇ ±âº» Á¤·Ä¹æ½Ä
-			Comparable c2 = (Comparable) o2;	// o2ÀÇ ±âº» Á¤·Ä¹æ½Ä
-//			return c1.compareTo(c2) * -1 ;	// -1À» °öÇØ¼­ ±âº» Á¤·Ä¹æ½ÄÀÇ ¿ªÀ¸·Î º¯°æÇÑ´Ù.
-			return c2.compareTo(c1);		// À§¿Í µ¿ÀÏÇÑ ÀÇ¹Ì
+			Comparable c1 = (Comparable) o1;	// o1ì˜ ê¸°ë³¸ ì •ë ¬ë°©ì‹
+			Comparable c2 = (Comparable) o2;	// o2ì˜ ê¸°ë³¸ ì •ë ¬ë°©ì‹
+//			return c1.compareTo(c2) * -1 ;	// -1ì„ ê³±í•´ì„œ ê¸°ë³¸ ì •ë ¬ë°©ì‹ì˜ ì—­ìœ¼ë¡œ ë³€ê²½í•œë‹¤.
+			return c2.compareTo(c1);		// ìœ„ì™€ ë™ì¼í•œ ì˜ë¯¸
 		}
 		return -1;
-	} 
+	}
 }

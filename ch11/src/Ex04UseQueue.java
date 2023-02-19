@@ -2,50 +2,50 @@ import java.util.*;
 
 class Ex04UseQueue {
 	static Queue<String> q = new LinkedList<>();
-	static final int MAX_SIZE = 5;	// Queue¿¡ ÃÖ´ë 5°³±îÁö¸¸ ÀúÀåµÇµµ·Ï ÇÑ´Ù.
+	static final int MAX_SIZE = 5;	// Queueì— ìµœëŒ€ 5ê°œê¹Œì§€ë§Œ ì €ì¥ë˜ë„ë¡ í•œë‹¤.
 
 	public static void main(String[] args) {
-		System.out.println("help¸¦ ÀÔ·ÂÇÏ¸é µµ¿ò¸»À» º¼ ¼ö ÀÖ½À´Ï´Ù.");
+		System.out.println("helpë¥¼ ì…ë ¥í•˜ë©´ ë„ì›€ë§ì„ ë³¼ ìˆ˜ ìˆìŠµë‹ˆë‹¤.");
 
 		while(true) {
 			System.out.print(">>");
 			try {
-				// È­¸éÀ¸·ÎºÎÅÍ ¶óÀÎ´ÜÀ§·Î ÀÔ·Â¹Ş´Â´Ù.
-				Scanner s = new Scanner(System.in);  
-				String input = s.nextLine().trim();	// ¾Õ/µÚ °ø¹é ¹«½Ã
+				// í™”ë©´ìœ¼ë¡œë¶€í„° ë¼ì¸ë‹¨ìœ„ë¡œ ì…ë ¥ë°›ëŠ”ë‹¤.
+				Scanner s = new Scanner(System.in);
+				String input = s.nextLine().trim();	// ì•/ë’¤ ê³µë°± ë¬´ì‹œ
 
 				if("".equals(input)) continue;
 
 				if(input.equalsIgnoreCase("quit")) {
-					System.exit(0);	// ÇÁ·Î±×·¥ Á¾·á
+					System.exit(0);	// í”„ë¡œê·¸ë¨ ì¢…ë£Œ
 				} else if(input.equalsIgnoreCase("help")) {
-					System.out.println(" help - µµ¿ò¸»À» º¸¿©Áİ´Ï´Ù.");
-					System.out.println(" quit - ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
-					System.out.println(" history - ÃÖ±Ù¿¡ ÀÔ·ÂÇÑ ¸í·É¾î¸¦ " + MAX_SIZE + "°³ º¸¿©Áİ´Ï´Ù.");
+					System.out.println(" help - ë„ì›€ë§ì„ ë³´ì—¬ì¤ë‹ˆë‹¤.");
+					System.out.println(" quit - í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
+					System.out.println(" history - ìµœê·¼ì— ì…ë ¥í•œ ëª…ë ¹ì–´ë¥¼ " + MAX_SIZE + "ê°œ ë³´ì—¬ì¤ë‹ˆë‹¤.");
 				} else if(input.equalsIgnoreCase("history")) {
 					int i = 0;
-					// LinkedListÀÇ ³»¿ëÀ» º¸¿©ÁØ´Ù.
+					// LinkedListì˜ ë‚´ìš©ì„ ë³´ì—¬ì¤€ë‹¤.
 					LinkedList<String> list = (LinkedList<String>) q;
 
 					for (String tmp : list) System.out.println(++i + "." + tmp);
 				} else {
-					save(input);    
+					save(input);
 					System.out.println(input);
 				}
 			} catch(Exception e) {
-				System.out.println("ÀÔ·Â¿À·ùÀÔ´Ï´Ù.");
+				System.out.println("ì…ë ¥ì˜¤ë¥˜ì…ë‹ˆë‹¤.");
 			}
 		}
 	}
 	public static void save(String input) {
-		// queue¿¡ ÀúÀåÇÑ´Ù.
+		// queueì— ì €ì¥í•œë‹¤.
 		if(!"".equals(input))	// if (input != null && !input.equals(""))
-        	q.offer(input);
+			q.offer(input);
 		/* null.equals("") -> NullPointerException
 		 * "".equals(null) -> false */
 
-		// queueÀÇ ÃÖ´ëÅ©±â¸¦ ³ÑÀ¸¸é Á¦ÀÏ Ã³À½ ÀÔ·ÂµÈ °ÍÀ» »èÁ¦ÇÑ´Ù.
-		if(q.size() > MAX_SIZE)  // size()´Â CollectionÀÎÅÍÆäÀÌ½º¿¡ Á¤ÀÇ
+		// queueì˜ ìµœëŒ€í¬ê¸°ë¥¼ ë„˜ìœ¼ë©´ ì œì¼ ì²˜ìŒ ì…ë ¥ëœ ê²ƒì„ ì‚­ì œí•œë‹¤.
+		if(q.size() > MAX_SIZE)  // size()ëŠ” Collectionì¸í„°í˜ì´ìŠ¤ì— ì •ì˜
 			q.poll();
 	}
 }

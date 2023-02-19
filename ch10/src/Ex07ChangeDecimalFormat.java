@@ -9,14 +9,14 @@ class Ex07ChangeDecimalFormat {
 			Number num = df1.parse("1,234,567.89");
 			System.out.print("1,234,567.89" + " -> ");
 
-			double d = num.doubleValue(); 
+			double d = num.doubleValue();
 			System.out.print(d + " -> ");
 
 			System.out.println(df2.format(num));
 
-			System.out.println(Double.parseDouble(df2.format(num)));	// Áö¼ö Çü½Ä ¹®ÀÚ¿­Àº ¼ıÀÚ·Î º¯È¯ °¡´É
+			System.out.println(Double.parseDouble(df2.format(num)));	// ì§€ìˆ˜ í˜•ì‹ ë¬¸ìì—´ì€ ìˆ«ìë¡œ ë³€í™˜ ê°€ëŠ¥
 			System.out.println(Double.valueOf(df2.format(num)));
-			System.out.println(Double.parseDouble(df1.format(num)));	// ÄŞ¸¶(,) Çü½Ä ¹®ÀÚ¿­Àº ¼ıÀÚ·Î º¯È¯ ºÒ°¡´É
+			System.out.println(Double.parseDouble(df1.format(num)));	// ì½¤ë§ˆ(,) í˜•ì‹ ë¬¸ìì—´ì€ ìˆ«ìë¡œ ë³€í™˜ ë¶ˆê°€ëŠ¥
 			System.out.println(Double.valueOf(df1.format(num)));
 		} catch(Exception e) {
 			e.printStackTrace();

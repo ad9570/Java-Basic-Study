@@ -4,19 +4,19 @@ class Ex01Equals {
 		Value v2 = new Value(10);
 
 		if (v1.equals(v2))
-			System.out.println("v1°ú v2´Â °°½À´Ï´Ù.");
+			System.out.println("v1ê³¼ v2ëŠ” ê°™ìŠµë‹ˆë‹¤.");
 		else
-			System.out.println("v1°ú v2´Â ´Ù¸¨´Ï´Ù.");
+			System.out.println("v1ê³¼ v2ëŠ” ë‹¤ë¦…ë‹ˆë‹¤.");
 
 		Value2 v3 = new Value2(20);
 		Value2 v4 = new Value2(20);
 
 		if (v3.equals(v4))
-			System.out.println("v3°ú v4´Â °°½À´Ï´Ù.");
+			System.out.println("v3ê³¼ v4ëŠ” ê°™ìŠµë‹ˆë‹¤.");
 		else
-			System.out.println("v3°ú v4´Â ´Ù¸¨´Ï´Ù.");
+			System.out.println("v3ê³¼ v4ëŠ” ë‹¤ë¦…ë‹ˆë‹¤.");
 	}
-} 
+}
 
 class Value {
 	int value;
@@ -27,8 +27,8 @@ class Value {
 		this.value = value;
 	}
 
-//	public boolean equals(Object obj) {	// Object °´Ã¼ÀÇ equals()
-//		return this == obj;	// ÁÖ¼Ò ºñ±³
+//	public boolean equals(Object obj) {	// Object ê°ì²´ì˜ equals()
+//		return this == obj;	// ì£¼ì†Œ ë¹„êµ
 //	}
 }
 
@@ -41,10 +41,10 @@ class Value2 {
 		this.value = value;
 	}
 
-	public boolean equals(Object obj) {	// ¿À¹ö¶óÀÌµù µÈ equals()
-		if (!(obj instanceof Value2))	// Çüº¯È¯ °¡´É ¿©ºÎ ¸ÕÀú È®ÀÎ
+	public boolean equals(Object obj) {	// ì˜¤ë²„ë¼ì´ë”© ëœ equals()
+		if (!(obj instanceof Value2))	// í˜•ë³€í™˜ ê°€ëŠ¥ ì—¬ë¶€ ë¨¼ì € í™•ì¸
 			return false;
-		Value2 v = (Value2) obj;	// Object Å¸ÀÔ obj¸¦ Value2 Å¸ÀÔÀ¸·Î Çüº¯È¯
-		return this.value == v.value;	// °ª ºñ±³
+		Value2 v = (Value2) obj;	// Object íƒ€ì… objë¥¼ Value2 íƒ€ì…ìœ¼ë¡œ í˜•ë³€í™˜
+		return this.value == v.value;	// ê°’ ë¹„êµ
 	}
 }

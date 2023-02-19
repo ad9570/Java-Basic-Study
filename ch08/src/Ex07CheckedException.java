@@ -1,11 +1,11 @@
 class Ex07CheckedException {
 	public static void main(String[] args) {
 		try {
-			throw new Exception("Exception Å¬·¡½º¿Í ±× ÀÚ¼Õµé(RuntimeException Á¦¿Ü)");
+			throw new Exception("Exception í´ë˜ìŠ¤ì™€ ê·¸ ìì†ë“¤(RuntimeException ì œì™¸)");
 		} catch (Exception e) {
-			System.out.println(e.getMessage() + " : ¿¹¿Ü Ã³¸® ÇÊ¼ö");
+			System.out.println(e.getMessage() + " : ì˜ˆì™¸ ì²˜ë¦¬ í•„ìˆ˜");
 		}
 
-//		throw new Exception();		// ÄÄÆÄÀÏ ¿¡·¯ ¹ß»ı, ½ÇÇà ºÒ°¡´É
+//		throw new Exception();		// ì»´íŒŒì¼ ì—ëŸ¬ ë°œìƒ, ì‹¤í–‰ ë¶ˆê°€ëŠ¥
 	}
 }

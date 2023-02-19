@@ -1,8 +1,8 @@
 class Ex08CharArray {
 	public static void main(String[] args) {
-		// ±æÀÌ°¡ 0ÀÎ char¹è¿­À» »ı¼ºÇÑ´Ù.
-		char[] cArr = new char[0];    // char[] cArr = {};¿Í °°´Ù.
-		String s1 = new String(cArr);  // String s = new String("");¿Í °°´Ù.
+		// ê¸¸ì´ê°€ 0ì¸ charë°°ì—´ì„ ìƒì„±í•œë‹¤.
+		char[] cArr = new char[0];    // char[] cArr = {};ì™€ ê°™ë‹¤.
+		String s1 = new String(cArr);  // String s = new String("");ì™€ ê°™ë‹¤.
 		String s2 = new String("");
 
 		System.out.println("cArr.length = " + cArr.length);

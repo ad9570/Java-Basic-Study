@@ -3,11 +3,11 @@ import java.text.*;
 
 class Ex09ChangeDateFormat {
 	public static void main(String[] args) {
-		DateFormat df1 = new SimpleDateFormat("yyyy³â MM¿ù ddÀÏ");
+		DateFormat df1 = new SimpleDateFormat("yyyyë…„ MMì›” ddì¼");
 		DateFormat df2 = new SimpleDateFormat("yyyy/MM/dd");
 
 		try {
-			Date d = df1.parse("2022³â 12¿ù 30ÀÏ");
+			Date d = df1.parse("2022ë…„ 12ì›” 30ì¼");
 			System.out.println(df2.format(d));
 
 			df2.parse("2022-12-30");

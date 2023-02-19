@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/src/Ex01Equals.java" charset="x-windows-949" />
-    <file url="file://$PROJECT_DIR$/src/Ex02Pid.java" charset="x-windows-949" />
-    <file url="file://$PROJECT_DIR$/src/Ex05ToStringValue.java" charset="x-windows-949" />
-    <file url="file://$PROJECT_DIR$/src/Ex06LiteralNew.java" charset="x-windows-949" />
-    <file url="file://$PROJECT_DIR$/src/Ex08CharArray.java" charset="x-windows-949" />
-    <file url="file://$PROJECT_DIR$/src/Ex10PrimitiveToString.java" charset="x-windows-949" />
-    <file url="file://$PROJECT_DIR$/src/Ex11StringBufferCompare.java" charset="x-windows-949" />
-    <file url="file://$PROJECT_DIR$/src/Ex13Round.java" charset="x-windows-949" />
-    <file url="file://$PROJECT_DIR$/src/Ex15Convert.java" charset="x-windows-949" />
-    <file url="file://$PROJECT_DIR$/src/Ex16AutoBoxing.java" charset="x-windows-949" />
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

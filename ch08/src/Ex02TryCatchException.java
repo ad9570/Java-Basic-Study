@@ -1,13 +1,13 @@
 class Ex02TryCatchException {
 	public static void main(String args[]) {
-			System.out.println(1);
-			try {
-				System.out.println(2);
-				System.out.println(0 / 0);// ¿¹¿Ü ¹ß»ı
-				System.out.println(3); 	// ½ÇÇàµÇÁö ¾Ê´Â´Ù.
-			} catch (ArithmeticException ae)	{
-				System.out.println(4);
-			}	// try-catchÀÇ ³¡
-			System.out.println(5);
+		System.out.println(1);
+		try {
+			System.out.println(2);
+			System.out.println(0 / 0);// ì˜ˆì™¸ ë°œìƒ
+			System.out.println(3); 	// ì‹¤í–‰ë˜ì§€ ì•ŠëŠ”ë‹¤.
+		} catch (ArithmeticException ae)	{
+			System.out.println(4);
+		}	// try-catchì˜ ë
+		System.out.println(5);
 	}
 }

@@ -4,11 +4,11 @@ class Ex05ErrorMessage {
 
 		try {
 			System.out.println(2);
-			System.out.println(0 / 0); // ¿¹¿Ü¹ß»ı!!!
+			System.out.println(0 / 0); // ì˜ˆì™¸ë°œìƒ!!!
 			System.out.println(3);
 		} catch (ArithmeticException ae) {
 			ae.printStackTrace();	// java.lang.ArithmeticException: / by zero at Ex8_5.main(Ex8_5.java:8)
-			System.out.println("¸Ş½ÃÁö : " + ae.getMessage());	// "/ by zero"
+			System.out.println("ë©”ì‹œì§€ : " + ae.getMessage());	// "/ by zero"
 		}
 
 		System.out.println(4);
