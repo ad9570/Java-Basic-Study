@@ -35,8 +35,9 @@ class Ex05UserCalendar {
 
 		// 해당 월의 1일이 어느 요일인지에 따라서 공백을 출력한다.
 		// 만일 1일이 수요일이라면 공백을 세 번 찍는다.(일요일부터 시작)
-		for (int i = 1; i < START_DAY_OF_WEEK; i++)
-			System.out.print("   ");
+//		for (int i = 1; i < START_DAY_OF_WEEK; i++)
+//			sb.append("   ");
+		sb.append("   ".repeat(START_DAY_OF_WEEK - 1));	// JDK 11 ~
 
 		// 일 값(i)을 하나씩 증가시킴과 동시에 요일 값(n)도 하나씩 증가시킨다.
 		// 요일 값(n)은 첫일의 요일 값으로 초기화한다.
