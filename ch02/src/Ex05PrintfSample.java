@@ -1,9 +1,7 @@
-
 public class Ex05PrintfSample {
-
 	public static void main(String[] args) {
-		System.out.println(10/3); //정수 / 정수 = 정수
-		System.out.println(10.0/3); //실수 / 정수 = 실수
+		System.out.println(10/3); // 정수 / 정수 = 정수
+		System.out.println(10.0/3); // 실수 / 정수 = 실수
 		
 		System.out.printf("%d%n", 15);
 		System.out.printf("%o%n", 15);
@@ -39,5 +37,4 @@ public class Ex05PrintfSample {
 		int a = '0';
 		System.out.println(a);
 	}
-
 }

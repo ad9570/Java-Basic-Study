@@ -1,5 +1,5 @@
 class Ex03CharAndInt {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		String str = "3";
 
 		System.out.println(str.charAt(0));	// "3" -> '3'
