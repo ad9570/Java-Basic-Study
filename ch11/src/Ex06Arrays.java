@@ -1,5 +1,6 @@
 import java.util.*;
 
+@SuppressWarnings("all")
 class Ex06Arrays {
     public static void main(String[] args) {
         int[] arr = {0, 1, 2, 3, 4};
@@ -25,17 +26,17 @@ class Ex06Arrays {
         Arrays.fill(arr7, 9);  // arr=[9,9,9,9,9]
         System.out.println("arr7(fill) = " + Arrays.toString(arr7));
 
-        Arrays.fill(arr7, 1, 3 ,7);  // arr=[9,7,7,9,9]
+        Arrays.fill(arr7, 1, 3, 7);  // arr=[9,7,7,9,9]
         System.out.println("arr7(fill from to) = " + Arrays.toString(arr7));
 
-        Arrays.setAll(arr7, i -> (int) (Math.random() * 5) + 1);	// i -> (int) (Math.random() * 5) + 1 : 람다식
+        Arrays.setAll(arr7, i -> (int) (Math.random() * 5) + 1);    // i -> (int) (Math.random() * 5) + 1 : 람다식
         System.out.println("arr7(setAll) = " + Arrays.toString(arr7));
 
 //		for (int i = 0; i < arr.length; i++) {
         for (int i : arr7) {
             char[] graph = new char[i];
-            Arrays.fill(graph, '*');	// 현재 배열에 저장된 값 만큼의 길이를 가진 '*'배열 생성
-            System.out.println(new String(graph) + i);	// 문자배열 -> 문자열 : String 생성자 / 문자열 -> 문자배열 : toCharArray()
+            Arrays.fill(graph, '*');                // 현재 배열에 저장된 값 만큼의 길이를 가진 '*'배열 생성
+            System.out.println(new String(graph) + i);  // 문자배열 -> 문자열 : String 생성자 / 문자열 -> 문자배열 : toCharArray()
         }
 
         String[][] str2D1 = new String[][]{{"aaa", "bbb"}, {"AAA", "BBB"}};

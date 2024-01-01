@@ -1,5 +1,4 @@
 public class RoundTest {
-
     public static void main(String[] args) {
         double sum = 0.0;
         double sum1 = 0.0;
@@ -18,5 +17,4 @@ public class RoundTest {
 
         System.out.printf("sum = %4.1f, sum1 = %4.1f, sum2 = %4.1f%n", sum, sum1, sum2);
     }
-
 }

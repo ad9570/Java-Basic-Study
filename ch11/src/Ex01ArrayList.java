@@ -1,9 +1,10 @@
 import java.util.*;
 
+@SuppressWarnings({"unchecked", "rawtypes"})
 class Ex01ArrayList {
     public static void main(String[] args) {
         // 기본 길이(capacity)가 10인 ArrayList를 생성
-        ArrayList<Comparable> list1 = new ArrayList<>(10);
+        ArrayList list1 = new ArrayList(10);
         list1.add(5);   // OK, 오토박싱 -> list1.add(new Integer(5));
         list1.add(4);
         list1.add(2);
@@ -11,7 +12,7 @@ class Ex01ArrayList {
         list1.add(1);
         list1.add(3);
 
-        List<Comparable> sublist = list1.subList(1, 4);
+        List sublist = list1.subList(1, 4);
         print(list1, sublist);
 
         // subList와 기존 리스트는 변경 시 상호 영향
@@ -27,7 +28,7 @@ class Ex01ArrayList {
         }
 
         // subList와 list1이 상호작용 하지 않도록 subList와 내용이 같은 새로운 ArrayList인 list2 생성
-        ArrayList<Comparable> list2 = new ArrayList<>(list1.subList(1, 4));
+        ArrayList list2 = new ArrayList(list1.subList(1, 4));
         print(list1, list2);
 
         // Collections : 컬렉션을 쉽게 다루는 메소드를 모은 유틸 클래스
@@ -52,16 +53,17 @@ class Ex01ArrayList {
 
         //  list2에서 list1에 포함된 객체들을 삭제한다.
         for (int i = list2.size() - 1; i >= 0; i--) {
-            if (list1.contains(list2.get(i)))
+            if (list1.contains(list2.get(i))) {
                 list2.remove(i);
+            }
         }
         print(list1, list2);
 
-        ArrayList<Comparable> list3 = new ArrayList<>(10);
+        ArrayList list3 = new ArrayList(10);
         list3.add("1");
         list3.add(0);
         list3.add(1);
-        ArrayList<Comparable> list4 = new ArrayList<>(list3);
+        ArrayList list4 = new ArrayList(list3);
         print(list3, list4);
 
         System.out.println("indexOf(\"1\") = " + list3.indexOf("1"));
@@ -72,7 +74,7 @@ class Ex01ArrayList {
         print(list3, list4);
     }
 
-    static void print(List<Comparable> list1, List<Comparable> list2) {
+    static void print(List list1, List list2) {
         System.out.println("list1 : " + list1);
         System.out.println("list2 : " + list2);
         System.out.println();

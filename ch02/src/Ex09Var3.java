@@ -1,14 +1,12 @@
+@SuppressWarnings("unused")
 public class Ex09Var3 {
 	public static void main(String[] args) {
 		final int score = 100;
 //		score = 200;
-		System.out.println("score = " + score);
 
 		boolean power = true;
-		System.out.println("power = " + power);
 
 		byte b = 127;
-		System.out.println("b = " + b);
 
 		int oct = 010; 	// 8진수, 10진수로 8
 		int hex = 0x10; // 16진수, 10진수로 16

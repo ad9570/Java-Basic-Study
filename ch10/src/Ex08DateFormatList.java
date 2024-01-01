@@ -22,8 +22,9 @@ class Ex08DateFormatList {
 		sdf[11] = new SimpleDateFormat("오늘은 이 달의 F번째 E요일입니다.");
 
 		StringBuilder sb = new StringBuilder();
-		for (int i = 0; i < sdf.length; i++)
-			sb.append(sdf[i].format(today)).append("\n");
+        for (SimpleDateFormat df : sdf) {
+            sb.append(df.format(today)).append("\n");
+        }
 		System.out.println(sb);
 	}
 }

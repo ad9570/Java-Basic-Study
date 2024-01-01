@@ -1,6 +1,6 @@
 class Ex14ComplexInit {
-	static int x = 1;
-	int y = 1;
+	static int x;
+	int y;
 	
 	static {
 		System.out.println("static { }");
@@ -13,17 +13,22 @@ class Ex14ComplexInit {
 	}
 
 	public Ex14ComplexInit() {
-		System.out.println("생성자");
-		y = 3;
 	}
 
-	public static void main(String args[]) {
+	public Ex14ComplexInit(int y) {
+		System.out.println("생성자");
+		this.y = y;
+	}
+
+	public static void main(String[] args) {
+		System.out.println("x = " + x);
+
 		System.out.println("Ex14ComplexInit bt1 = new Ex14ComplexInit(); ");
-		Ex14ComplexInit bt1 = new Ex14ComplexInit();
-		System.out.println(bt1.y);
+		Ex14ComplexInit bt1 = new Ex14ComplexInit(3);
+		System.out.println("bt1.y = " + bt1.y);
 
 		System.out.println("Ex14ComplexInit bt2 = new Ex14ComplexInit(); ");
 		Ex14ComplexInit bt2 = new Ex14ComplexInit();
-		System.out.println(bt2.y);
+		System.out.println("bt2.y = " + bt2.y);
 	}
 }

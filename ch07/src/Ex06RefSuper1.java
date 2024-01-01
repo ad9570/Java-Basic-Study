@@ -1,5 +1,5 @@
 class Ex06RefSuper1 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Child1 c = new Child1();
 		c.method();
 	}

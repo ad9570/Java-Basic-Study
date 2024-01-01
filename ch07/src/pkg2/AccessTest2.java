@@ -3,7 +3,6 @@ package pkg2;
 import pkg1.AccessParent;
 
 public class AccessTest2 {
-
 	public static void main(String[] args) {
 		AccessParent p = new AccessParent();
 //		System.out.println(p.pri);	// ERROR, 다른 클래스에서 접근 불가능
@@ -12,8 +11,9 @@ public class AccessTest2 {
 		System.out.println(p.pub);
 		
 		System.out.println();
+
 		AccessChild c = new AccessChild();
 		c.printMembers1();
+		c.printMembers2();
 	}
-
 }

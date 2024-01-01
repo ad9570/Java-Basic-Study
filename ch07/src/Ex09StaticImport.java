@@ -6,7 +6,7 @@ class Ex09StaticImport {
 		// System.out.println(Math.random());
 		out.println(random());	// random() : Math 클래스의 클래스 메서드
 
-		// System.out.println("Math.PI :"+Math.PI);
-		out.println("Math.PI :" + PI);	// PI : Math 클래스의 클래스 상수
+		// System.out.println("Math.PI : " + Math.PI);
+		out.println("Math.PI : " + PI);	// PI : Math 클래스의 클래스 상수
 	}
 }

@@ -8,7 +8,6 @@ class CircleI extends CenterPoint {
 }
 
 public class Ex02Inheritance {
-
 	public static void main(String[] args) {
 		CircleI c = new CircleI();
 		c.x = 2;
@@ -19,5 +18,4 @@ public class Ex02Inheritance {
 		System.out.println("c.y = " + c.y);
 		System.out.println("c.r = " + c.r);
 	}
-
 }

@@ -1,5 +1,6 @@
 import java.util.*;
 
+@SuppressWarnings("all")
 class Ex17Entry {
     public static void main(String[] args) {
         HashMap<String, Integer> map = new HashMap<>();
@@ -10,14 +11,15 @@ class Ex17Entry {
         map.put("AHN", 90);
 
         /*
-        * Map 인터페이스 -> 내부 인터페이스 Entry
-        * 인터페이스의 내부 클래스 / 내부 인터페이스는 모두 static(접근제어자 생략 가능)
-        * static이기 때문에 Map.Entry와 같이 표현 가능
-        */
+         * Map 인터페이스 -> 내부 인터페이스 Entry
+         * 인터페이스의 내부 클래스 / 내부 인터페이스는 모두 static(접근제어자 생략 가능)
+         * static이기 때문에 Map.Entry와 같이 표현 가능
+         */
         Set<Map.Entry<String, Integer>> eSet = map.entrySet();
 
-        for (Map.Entry<String, Integer> e : eSet)
+        for (Map.Entry<String, Integer> e : eSet) {
             System.out.println("이름 : " + e.getKey() + ", 점수 : " + e.getValue());
+        }
 
         Set<String> kSet = map.keySet();
         System.out.println("참가자 명단 : " + kSet);

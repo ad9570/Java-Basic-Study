@@ -1,5 +1,5 @@
+@SuppressWarnings("all")
 public class Ex03CouldNotHandle {
-
     public static void main(String[] args) {
         try {
             String s = null;
@@ -10,5 +10,4 @@ public class Ex03CouldNotHandle {
         }
         System.out.println("Handled.");
     }
-
 }

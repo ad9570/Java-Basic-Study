@@ -1,5 +1,6 @@
 import java.io.*;
 
+@SuppressWarnings("all")
 class Ex10ThrowsTryCatch {
 	public static void main(String[] args) {
 		// file1 생성 : throws 예외가 발생하면 넘긴 후 -> try-catch 호출한 쪽에서 처리
@@ -14,7 +15,7 @@ class Ex10ThrowsTryCatch {
 	}
 
 	static File createFile(String fileName) throws Exception {
-		if (fileName == null || fileName.equals(""))
+		if (fileName == null || fileName.isEmpty())
 			throw new Exception("파일 이름이 유효하지 않습니다.");
 		File f = new File(fileName);		//  File클래스의 객체를 만든다.
 		// File객체의 createNewFile메서드를 이용해서 실제 파일을 생성한다.
@@ -24,7 +25,7 @@ class Ex10ThrowsTryCatch {
 
 	private static String createFile2(String fileName) {
 		try {
-			if (fileName == null || fileName.equals(""))
+			if (fileName == null || fileName.isEmpty())
 				throw new Exception("파일 이름이 유효하지 않습니다.");
 			File f = new File(fileName);
 			f.createNewFile();

@@ -1,5 +1,5 @@
+@SuppressWarnings("all")
 public class ConvertTest {
-
     public static void main(String[] args) {
         int i10 = Integer.parseInt("100");
         int i2 = Integer.parseInt("100", 2);
@@ -18,5 +18,4 @@ public class ConvertTest {
             e.printStackTrace();
         }
     }
-
 }

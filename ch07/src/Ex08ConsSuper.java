@@ -1,7 +1,10 @@
 public class Ex08ConsSuper {
 	public static void main(String[] args) {
-		Point3 p = new Point3(2, 3, 1);
-		System.out.println(p.x + ", " + p.y + ", " + p.z);
+		Point3 p1 = new Point3(2, 3, 1);
+		System.out.println(p1.x + ", " + p1.y + ", " + p1.z);
+
+		Point3 p2 = new Point3(9);
+		System.out.println(p2.x + ", " + p2.y + ", " + p2.z);
 	}
 }
 
@@ -27,8 +30,6 @@ class Point3 extends Point2 {
 	}
 	
 	Point3(int z) {	// super(); 자동 추가 -> Point2의 기본 생성자 Point2()가 없을 경우 에러 발생
-		x = 4;
-		y = 7;
 		this.z = z;
 	}
 }
